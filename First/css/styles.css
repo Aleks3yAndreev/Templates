@@ -1,0 +1,593 @@
+body {
+    font-family: 'Titillium Web', Aerial, sans-serif;
+}
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.button {
+    display: block;
+    font-weight: 700;
+    width: 293px;
+    height: 66px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 60px auto 0;
+    cursor: pointer;
+}
+h1  {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.clr::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* -------------------------------------------------------------------------------------
+
+                Header
+
+-------------------------------------------------------------------------------------- */
+.page-header {
+    background: rgb(135, 80, 156);
+    padding-top: 57px;
+}
+.page-header .logo {
+    background: url("../img/logo.png") no-repeat;
+    float: left;    
+    width: 117px;
+    height: 37px;
+    margin-left: 62px;
+}
+.page-header .menu {
+    float: right;
+    margin: 13px 34px 0 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.page-header .menu .item {
+    color: white;
+    margin-right: 20px;
+    padding: 3px 10px;
+    transition: background 0.3s;
+}
+.page-header .menu .item:last-child {
+    margin-right: 0;
+}
+.page-header .menu .item:hover {
+    background: rgb(100, 58, 121);
+    border-radius: 5px;
+}
+/* -------------------------------------------------------------------------------------
+
+                Welcome
+
+-------------------------------------------------------------------------------------- */
+.welcome {
+    background: rgb(135, 80, 156);
+    padding-top: 140px;
+    padding-bottom: 145px;
+}
+.welcome p {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+.welcome p span {
+    display: block;
+}
+.welcome .work-with-us {
+    background: rgb(235, 125, 75);
+    border-bottom: 4px solid rgba(0, 0, 0, .15);
+}
+.welcome .work-with-us:hover {
+    background: rgb(255, 125, 75);
+}
+/* -------------------------------------------------------------------------------------
+
+                Services
+
+-------------------------------------------------------------------------------------- */
+.services {
+    background: rgb(23, 194, 164);
+    padding-top: 115px;
+    padding-bottom: 123px;
+}
+.services h1 {
+    color: white;
+}
+.services h1:after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid rgba(0, 0, 0, .15);
+    margin: 15px auto 22px;
+    width: 80px;
+}
+.services .text {
+    font-size: 18px;
+    color: white;
+    width: 580px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 140%;
+}
+.services .services-list {
+    margin: 78px 20px 0;
+}
+.services .services-list .service-item {
+    float: left;
+    margin-right: 20px;
+    width: 260px;
+}
+.services .services-list h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 187px;
+}
+.services .services-list .description {
+    display: block;
+    font-weight: lighter;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 21px auto 0;
+    line-height: 150%;
+    font-size: 16px;
+}
+.services .services-list .flag {
+    background: url("../img/flag.png") no-repeat top;
+}
+.services .services-list .crayon {
+    background: url("../img/crayon.png") no-repeat top;
+}
+.services .services-list .gears {
+    background: url("../img/gears.png") no-repeat top;
+}
+.services .services-list .rocket {
+    background: url("../img/rocket.png") no-repeat top;
+    margin-right: 0;
+}
+/* -------------------------------------------------------------------------------------
+
+                Team
+
+-------------------------------------------------------------------------------------- */
+.team {
+    background: rgb(231, 241, 248);
+    padding-top: 116px;
+    padding-bottom: 77px;
+}
+.team h1 {
+    font-size: 41.29px;
+}
+.team h1:after {
+    content: "";
+    border-bottom: 5px solid rgb(200, 217, 229);
+    display: block;
+    width: 87px;
+    margin: 15px auto 22px;
+}
+.team .text {
+    font-size: 18.58px;
+    text-align: center;
+}
+.team .employees-list {
+    margin: 82px 20px 0;
+}
+.team .employees-list li {
+    width: 260px;
+    margin-bottom: 50px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+.team .employees-list li:not(:nth-child(4n+1)) {
+    margin-left: 20px;
+}
+.team .employees-list .last {
+    margin-right: 0;
+}
+.team .employees-list .photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.team .employees-list h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 41px;
+    white-space: nowrap;
+}
+.team .employees-list span {
+    color: rgb(151, 213, 239);
+    font-size: 16px;
+    display: block;
+    margin-top: 11px;
+    white-space: nowrap;
+}
+.team .employees-list p {
+    font-weight: 300;
+    font-size: 16px;
+    width: 210px;
+    margin: 26px auto 0;
+    line-height: 130%;
+}
+.team .employees-list .contacts {
+    display: inline-block;
+    margin-top: 31px;
+}
+.team .employees-list .fb {
+    background: url("../img/contacts/fb.png") no-repeat center;
+}
+.team .employees-list .twitter {
+    background: url("../img/contacts/twitter.png") no-repeat center;
+}
+.team .employees-list .linkedin {
+    background: url("../img/contacts/linkedin.png") no-repeat center;
+}
+.team .employees-list .mail {
+    background: url("../img/contacts/mail.png") no-repeat center;
+}
+.team .employees-list .contact {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: rgb(189, 209, 223);
+}
+.team .employees-list .contact:last-child {
+    margin-right: 0;
+}
+.team .employees-list .contact:hover {
+    background-color: rgb(189, 209, 255);
+}
+/* -------------------------------------------------------------------------------------
+
+                Skills
+
+-------------------------------------------------------------------------------------- */
+.skills {
+    background: white;
+    padding-top: 113px;
+    padding-bottom: 119px;
+}
+.skills h1:after {
+    content: "";
+    border-bottom: 5px solid rgb(223, 232, 237);
+    display: block;
+    width: 87px;
+    margin: 15px auto 22px;
+}
+.skills .text {
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+    width: 580px;
+    line-height: 140%;
+}
+.skills .skill-levels {
+    margin: 83px 20px 0;
+}
+.skills .skill-levels .item {
+    width: 260px;
+    margin-right: 20px;
+    float: left;
+}
+.skills .skill-levels .value  {
+    display: block;
+    margin: 0 auto;
+    line-height: 160px;
+    vertical-align: middle;
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+}
+.skills .skill-levels span {
+    font-size: 65%;
+}
+.skills .skill-levels .web-design {
+    background: url("../img/progress-1.png") no-repeat top;
+}
+.skills .skill-levels .html-css {
+    background: url("../img/progress-2.png") no-repeat top;
+}
+.skills .skill-levels .graphic-design {
+    background: url("../img/progress-3.png") no-repeat top;
+}
+.skills .skill-levels .ui-ux {
+    background: url("../img/progress-4.png") no-repeat top;
+    margin-right: 0;
+}
+.skills .skill-levels h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 29px;
+}
+/* -------------------------------------------------------------------------------------
+
+                Portfolio
+
+-------------------------------------------------------------------------------------- */
+.portfolio {
+    background: rgb(255, 221, 153);
+    padding-top: 115px;
+    padding-bottom: 110px;
+    text-align: center;
+}
+.portfolio h1:after {
+    content: "";
+    display: block;
+    width: 87px;
+    border-bottom: 4px solid rgb(229,195,127);
+    margin: 15px auto 22px;
+}
+.portfolio .text {
+    font-size: 18px;
+    width: 515px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 140%;
+}
+.portfolio .navigation {
+    display: inline-block;
+    margin-top: 40px;
+}
+.portfolio .navigation a {
+    float: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    width: 84px;
+    height: 38px;
+    background: rgb(235, 201, 133);
+    border-radius: 5px;
+    margin-right: 10px;
+    line-height: 38px;
+    vertical-align: middle;
+}
+.portfolio .navigation a:nth-child(3),
+.portfolio .navigation a:nth-child(4) {
+    width: 90px;
+}
+.portfolio .navigation .current {
+    background: white;
+}
+.portfolio .navigation a:last-child {
+    margin-right: 0;
+}
+.portfolio .works-list {
+    margin: 60px 20px 0;
+}
+.portfolio .works-list .item {
+    width: 540px;
+    float: left;
+    margin-bottom: 63px;
+}
+.portfolio .works-list .item:not(:nth-child(2n+1)) {
+    margin-left: 20px;
+}
+.portfolio .works-list span {
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    margin-top: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.portfolio .load-projects {
+    margin-top: 17px;
+    background: rgb(23,194,164);
+    border-bottom: 4px solid rgba(20,165,140,.35);
+}
+.portfolio .load-projects:hover {
+    background: rgb(23,170,164);
+}
+/* -------------------------------------------------------------------------------------
+
+                Client-reviews
+
+-------------------------------------------------------------------------------------- */
+.client-reviews {
+    background: rgb(215, 70, 128);
+    padding-top: 115px;
+    padding-bottom: 125px;
+}
+.client-reviews h1 {
+    color: white;
+}
+.client-reviews h1:after {
+    content: "";
+    display: block;
+    width: 87px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid rgb(183,60,109);
+    margin: 15px auto 22px;
+}
+.client-reviews h2 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.client-reviews .reviews-list {
+    margin: 68px 20px 0;
+    color: white;
+}
+.client-reviews .reviews-list .item {
+    width: 540px;
+    float: left;
+    margin-bottom: 145px;
+}
+.client-reviews .reviews-list .item:not(:nth-child(2n+1)) {
+    margin-left: 20px;
+}
+.client-reviews .reviews-list .item:last-child,
+.client-reviews .reviews-list .item:nth-last-child(2) {
+    margin-bottom: 0;
+}
+.client-reviews .reviews-list .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 43px;
+}
+.client-reviews .reviews-list .review {
+    display: inline-block;
+    margin-top: 8px;
+    width: 377px;
+    overflow: hidden;
+}
+.client-reviews .reviews-list q {
+    display: inline-block;
+    font-size: 21px;
+    font-style: italic;
+    width: 377px;
+    line-height: 30px;
+    margin-bottom: 27px;
+}
+.client-reviews .reviews-list .item:nth-child(2) q,
+.client-reviews .reviews-list .item:nth-child(3) q {
+    width: 360px;
+}
+.client-reviews .reviews-list .name {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.client-reviews .reviews-list .position {
+    white-space: nowrap;
+    font-size: 18px;
+    color: rgb(250, 205, 150);
+}
+/* -------------------------------------------------------------------------------------
+
+                Feedback
+
+-------------------------------------------------------------------------------------- */
+.feedback {
+    background: rgb(60, 84, 153);
+    padding-top: 116px;
+    padding-bottom: 116px;
+}
+.feedback h1 {
+    color: white;
+}
+.feedback h1:after {
+    content: "";
+    display: block;
+    width: 87px;
+    border-bottom: 4px solid rgb(39, 58, 113);
+    margin: 15px auto 22px;
+}
+.feedback address {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.feedback .comment {
+    width: 860px;
+    margin: 77px auto 0;
+}
+.feedback .comment input {
+    width: 373px;
+    margin-right: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgb(39, 58, 113);
+    color: white;
+    font-size: 18px;
+    padding: 17px 20px;
+}
+.feedback .comment input:nth-child(2) {
+    margin-right: 0;
+}
+.feedback .comment textarea {
+    background: rgb(39, 58, 113);
+    border: none;
+    border-radius: 5px;
+    width: 820px;
+    height: 160px;
+    margin-top: 27px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    resize: vertical;
+    padding: 20px;
+}
+.feedback .comment input::-webkit-input-placeholder {
+    color: white;
+    text-transform: capitalize;
+}
+.feedback .comment textarea::-webkit-input-placeholder {
+    color: white;
+    text-transform: capitalize;
+}
+.feedback .comment input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.feedback .comment textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.feedback .send {
+    background: rgb(48, 186, 231);
+    border-bottom: 4px solid rgba(41, 158, 197, .35);
+}
+.feedback .send:hover {
+    background: rgb(48, 186, 190);
+}
+/* -------------------------------------------------------------------------------------
+
+                Footer
+
+-------------------------------------------------------------------------------------- */
+.page-footer {
+    background: rgb(52, 75, 142);
+    padding-top: 47px;
+    padding-bottom: 41px;
+}
+.page-footer .footer-menu {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+.page-footer .footer-menu a {
+    color: white;
+    margin-right: 54px;
+}
+.page-footer .footer-menu a:last-child {
+    margin-right: 0;
+}
+.page-footer .footer-menu a:hover {
+    color: rgb(48, 186, 231);
+}

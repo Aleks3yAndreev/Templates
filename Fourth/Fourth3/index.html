@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Local Stores</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="topbar">
+                <div class="wrapper">
+                    <div class="currency">
+                        <span>Currency:</span>
+                        <select name="currency" id="currency">
+                            <option value="gbp">GBP</option>
+                            <option value="dollar">USD</option>
+                            <option value="rur">RUR</option>
+                            <option value="jpy">JPY</option>
+                            <option value="cny">CNY</option>
+                        </select>
+                    </div>
+                    <div class="basket">
+                        <select name="purchases" class="purchases">
+                            <option value="empty">empty</option>
+                        </select>
+                    </div>
+                    <div class="reg-sign-in">
+                        <a href="#" title="register" class="register">register</a>
+                        <a href="#" title="sign in" class="sign-in">sign in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#" title="avenue fashion" class="avenue">avenue</a>
+                    <a href="#" title="avenue fashion" class="fashion">fashion</a>
+                </div>
+                <form action="" class="search-form">
+                    <input type="text" class="search" placeholder="Search..">
+                </form>
+                <ul class="main-menu">
+                    <li class="item">
+                        <a href="#" title="mens">mens</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="womens">womens</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="the brand">the brand</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="local stores" class="current">local stores</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="look book">look book</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="intro">
+            <div class="darken">
+                <div class="intro-wrapper">
+                    <span class="ave"><span>a</span><span>v</span><span>e</span></span>
+                    <div class="heading">
+                        <h1><span>local</span> stores</h1>
+                        <h2>find a store near you</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="content">
+            <div class="content-wrapper">
+                <ul class="locations">
+                    <li class="item">
+                        <h2>London</h2>
+                        <address>180-182 Regent Street, London, W1B 5BT</address>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
+                        <button class="view-details">view details</button>
+                    </li>
+                    <li class="item">
+                        <h2>New York</h2>
+                        <address>109 Columbus Circle, New York, NY 10023</address>
+                        <p>Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
+                        <button class="view-details">view details</button>
+                    </li>
+                    <li class="item">
+                        <h2>Paris</h2>
+                        <address>2133 Rue Saint-Honoré, 75001 Paris</address>
+                        <p>Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p>
+                        <button class="view-details">view details</button>
+                    </li>
+                </ul>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.0408745651907!2d-0.1420005!3d51.5124661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d576c6b99d%3A0xde0c019681f9bfda!2zMTgyIFJlZ2VudCBTdCwgU29obywgTG9uZG9uIFcxQiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2s!4v1485874598450" width="1235" height="530" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="details">
+                    <h2>London</h2>
+                    <address>180-182 Regent Street, London, W1B 5BT</address>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
+                    <div class="location-info">
+                        <span class="icon position">180-182 Regent Street, London, W1B 5BT</span>
+                        <span class="icon phone">0123-456-789</span>
+                        <span class="icon site">www.yourwebsite.com</span>
+                        <span class="icon email">upport@yourwebsite.com</span>
+                        <span class="icon time">Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</span>
+                    </div>
+                    <nav class="socials">
+                        <a href="#" title="facebook" class="social facebook"></a>
+                        <a href="#" title="twitter" class="social twitter"></a>
+                        <a href="#" title="instagram" class="social instagram"></a>
+                        <a href="#" title="pinterest" class="social pinterest"></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-wrapper">
+                <ul class="footer-menu">
+                    <li class="item">
+                        <a href="#" title="Information" class="link">Information</a>
+                        <a href="#" title="The brand" class="link">The brand</a>
+                        <a href="#" title="Local stores" class="link current">Local stores</a>
+                        <a href="#" title="Customer service" class="link">Customer service</a>
+                        <a href="#" title="Privacy &amp; cookies" class="link">Privacy &amp; cookies</a>
+                        <a href="#" title="Site map" class="link">Site map</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="Why buy from us" class="link">Why buy from us</a>
+                        <a href="#" title="Shipping &amp; returns" class="link">Shipping &amp; returns</a>
+                        <a href="#" title="Secure shopping" class="link">Secure shopping</a>
+                        <a href="#" title="Testimonials" class="link">Testimonials</a>
+                        <a href="#" title="Award winning" class="link">Award winning</a>
+                        <a href="#" title="Ethical trading" class="link">Ethical trading</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="Your account" class="link">Your account</a>
+                        <a href="#" title="Sign in" class="link">Sign in</a>
+                        <a href="#" title="Register" class="link">Register</a>
+                        <a href="#" title="View cart" class="link">View cart</a>
+                        <a href="#" title="View your lookbook" class="link">View your lookbook</a>
+                        <a href="#" title="Track an order" class="link">Track an order</a>
+                        <a href="#" title="Update information" class="link">Update information</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="Lookbook" class="link">Lookbook</a>
+                        <a href="#" title="Latest posts" class="link">Latest posts</a>
+                        <a href="#" title="Men’s lookbook" class="link">Men’s lookbook</a>
+                        <a href="#" title="Women’s lookbook" class="link">Women’s lookbook</a>
+                        <a href="#" title="Lookbooks RSS feed" class="link">Lookbooks RSS feed</a>
+                        <a href="#" title="View your lookbook" class="link">View your lookbook</a>
+                        <a href="#" title="Delete your lookbook" class="link">Delete your lookbook</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" title="contact details" class="link">contact details</a>
+                        <address>Head Office: Avenue Fashion,<br>
+                            180-182 Regent Street, London.<br>
+                            <span class="phone">Telephone: 0123-456-789</span><br>
+                            <span class="email">Email: support@yourwebsite.com</span>
+                        </address>
+                    </li>
+                </ul>
+                <div class="banners">
+                    <div class="award">
+                        award winner<br>
+                        <span>fashion awards 2016</span>
+                    </div>
+                    <div class="social">
+                        <a href="#" title="facebook" class="social-link facebook"></a>
+                        <a href="#" title="twitter" class="social-link twitter"></a>
+                        <a href="#" title="instagram" class="social-link instagram"></a>
+                        <a href="#" title="pinterest" class="social-link pinterest"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="footer-wrapper">
+                    <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
+                    <span class="design-by">Design by RobbyDesigns.com</span>
+                    <span class="dev-by">Dev by Loremipsum.com</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
