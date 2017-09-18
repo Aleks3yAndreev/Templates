@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Local Stores</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -9,30 +10,30 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     </head>
     <body>
-        <header class="page-header">
-            <div class="topbar">
-                <div class="wrapper">
-                    <div class="currency">
-                        <span>Currency:</span>
-                        <select name="currency" id="currency">
-                            <option value="gbp">GBP</option>
-                            <option value="dollar">USD</option>
-                            <option value="rur">RUR</option>
-                            <option value="jpy">JPY</option>
-                            <option value="cny">CNY</option>
-                        </select>
-                    </div>
-                    <div class="basket">
-                        <select name="purchases" class="purchases">
-                            <option value="empty">empty</option>
-                        </select>
-                    </div>
-                    <div class="reg-sign-in">
-                        <a href="#" title="register" class="register">register</a>
-                        <a href="#" title="sign in" class="sign-in">sign in</a>
-                    </div>
+        <header class="page-header clr">
+            <div class="wrapper">
+                <div class="currency">
+                    <label for="currency">Currency:</label>
+                    <select name="currency" id="currency">
+                        <option value="gbp">GBP</option>
+                        <option value="dollar">USD</option>
+                        <option value="rur">RUR</option>
+                        <option value="jpy">JPY</option>
+                        <option value="cny">CNY</option>
+                    </select>
+                </div>
+                <div class="basket">
+                    <select name="purchases" class="purchases" title="basket">
+                        <option value="empty">empty</option>
+                    </select>
+                </div>
+                <div class="reg-sign-in">
+                    <a href="#" title="register" class="register">register</a>
+                    <a href="#" title="sign in" class="sign-in">sign in</a>
                 </div>
             </div>
+        </header>
+        <section class="clothing-categories clr">
             <div class="wrapper">
                 <div class="logo">
                     <a href="#" title="avenue fashion" class="avenue">avenue</a>
@@ -59,7 +60,7 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </section>
         <div class="intro">
             <div class="darken">
                 <div class="intro-wrapper">
@@ -71,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <section class="content">
+        <section class="content clr">
             <div class="content-wrapper">
                 <ul class="locations">
                     <li class="item">
@@ -94,7 +95,8 @@
                     </li>
                 </ul>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.0408745651907!2d-0.1420005!3d51.5124661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d576c6b99d%3A0xde0c019681f9bfda!2zMTgyIFJlZ2VudCBTdCwgU29obywgTG9uZG9uIFcxQiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2s!4v1485874598450" width="1235" height="530" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="layer"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.0408745651907!2d-0.1420005!3d51.5124661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d576c6b99d%3A0xde0c019681f9bfda!2zMTgyIFJlZ2VudCBTdCwgU29obywgTG9uZG9uIFcxQiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2s!4v1485874598450" class="frame" allowfullscreen></iframe>
                 </div>
                 <div class="details">
                     <h2>London</h2>
@@ -116,8 +118,8 @@
                 </div>
             </div>
         </section>
-        <footer class="page-footer">
-            <div class="footer-wrapper">
+        <section class="about-us clr">
+            <div class="about-wrapper">
                 <ul class="footer-menu">
                     <li class="item">
                         <a href="#" title="Information" class="link">Information</a>
@@ -164,8 +166,8 @@
                 </ul>
                 <div class="banners">
                     <div class="award">
-                        award winner<br>
-                        <span>fashion awards 2016</span>
+                        <span>award winner</span>
+                        <span class="weight">fashion awards 2016</span>
                     </div>
                     <div class="social">
                         <a href="#" title="facebook" class="social-link facebook"></a>
@@ -175,12 +177,12 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="footer-wrapper">
-                    <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
-                    <span class="design-by">Design by RobbyDesigns.com</span>
-                    <span class="dev-by">Dev by Loremipsum.com</span>
-                </div>
+        </section>
+        <footer class="page-footer">
+            <div class="about-wrapper">
+                <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
+                <span class="design-by">Design by RobbyDesigns.com</span>
+                <span>Dev by Loremipsum.com</span>
             </div>
         </footer>
     </body>

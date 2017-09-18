@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tour & Travel Guide</title>
         <link rel="stylesheet" href="../Second/css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -11,8 +12,8 @@
     <body>
         <div class="base-wrapper">
             <section class="main-section">
-                <header class="page-header">
-                    <div class="contacts-bar">
+                <header class="page-header clr">
+                    <div class="contacts-bar clr">
                         <div class="wrapper">
                             <div class="main-contacts">
                                 <span class="contacts phone">+1 420-000-6000</span>
@@ -21,7 +22,6 @@
                             </div>
                             <form action="" method="" class="search-form">
                                 <input type="text" name="search" class="search" placeholder="search...">
-                                <button type="submit" class="search-btn"></button>
                             </form>
                             <nav class="social-links">
                                 <a href="#" class="facebook" title="facebook"></a>
@@ -34,15 +34,21 @@
                     </div>
                     <div class="navigation-bar">
                         <div class="wrapper">
-                            <a href="#" class="logo" title="logo"></a>
-                            <nav class="menu">
-                                <a href="#" class="item" title="home">home</a>
-                                <a href="#" class="item" title="blog">blog</a>
-                                <a href="#" class="item" title="gallery">gallery</a>
-                                <a href="#" class="item" title="activities">activities</a>
-                                <a href="#" class="item" title="deals">deals</a>
-                                <a href="#" class="item" title="contact">contact</a>
-                            </nav>
+                            <div class="logo">
+                                <a href="#" class="logo-title" title="logo">trip<span>finder</span></a>
+                                <a href="#" class="logo-site" title="logo">psdfreebies.com</a>
+                            </div>
+                            <div class="box">
+                                <button class="menuToggle">Menu</button>
+                                <nav class="menu">
+                                    <a href="#" class="item" title="home">home</a>
+                                    <a href="#" class="item" title="blog">blog</a>
+                                    <a href="#" class="item" title="gallery">gallery</a>
+                                    <a href="#" class="item" title="activities">activities</a>
+                                    <a href="#" class="item" title="deals">deals</a>
+                                    <a href="#" class="item" title="contact">contact</a>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -76,13 +82,25 @@
             <section class="tour-type">
                 <div class="white-mask">
                     <div class="wrapper">
-                        <h1>Find a Tour by Tour Type </h1>
+                        <h2>Find a Tour by Tour Type </h2>
                         <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Sceleriscue in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
-                        <ul class="type-list clr">
-                            <li class="item north-america">north america</li>
-                            <li class="item north-america02">north america</li>
-                            <li class="item san-francisco">san francisco</li>
-                            <li class="item amazon">amazon cruise</li>
+                        <ul class="type-list">
+                            <li class="item">
+                                <img src="img/NorthAmerica.png" class="img" alt="photo">
+                                <span>north america</span>
+                            </li>
+                            <li class="item">
+                                <img src="img/NorthAmerica2.png" class="img" alt="photo">
+                                <span>north america</span>
+                            </li>
+                            <li class="item">
+                                <img src="img/SanFrancisco.png" class="img" alt="photo">
+                                <span>san francisco</span>
+                            </li>
+                            <li class="item">
+                                <img src="img/Amazon.png" class="img" alt="photo">
+                                <span>amazon cruise</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -90,35 +108,41 @@
             <section class="deals-discounts">
                 <div class="blue-mask">
                     <div class="wrapper">
-                        <h1>deals and discounts</h1>
+                        <h2>deals and discounts</h2>
                         <ul class="deals-list clr">
                             <li class="deal-item">
-                                <img width="373" height="274" src="img/deal1.png" alt="deals and discounts">
-                                <span class="price">
-                                    <span>$</span><span class="price-small">899</span>
-                                    <span class="price-big">$499</span>
-                                </span>
-                                <h2>surfing</h2>
+                                <div class="offer">
+                                    <img src="img/deal1.png" class="img" alt="deals and discounts">
+                                    <span class="price">
+                                        <span>$</span><span class="price-small">899</span>
+                                        <span class="price-big">$499</span>
+                                    </span>
+                                </div>
+                                <h3>surfing</h3>
                                 <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Sceleriscue in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
                                 <button class="btn book-now">book now</button>
                             </li>
                             <li class="deal-item">
-                                <img width="373" height="274" src="img/deal2.png" alt="deals and discounts">
-                                <span class="price">
-                                    <span>$</span><span class="price-small">899</span>
-                                    <span class="price-big">$499</span>
-                                </span>
-                                <h2>surfing</h2>
+                                <div class="offer">
+                                    <img src="img/deal2.png" class="img" alt="deals and discounts">
+                                    <span class="price">
+                                        <span>$</span><span class="price-small">899</span>
+                                        <span class="price-big">$499</span>
+                                    </span>
+                                </div>
+                                <h3>surfing</h3>
                                 <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Sceleriscue in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
                                 <button class="btn book-now">book now</button>
                             </li>
                             <li class="deal-item">
-                                <img width="373" height="274" src="img/deal3.png" alt="deals and discounts">
-                                <span class="price">
-                                    <span>$</span><span class="price-small">899</span>
-                                    <span class="price-big">$499</span>
-                                </span>
-                                <h2>surfing</h2>
+                                <div class="offer">
+                                    <img src="img/deal3.png" class="img" alt="deals and discounts">
+                                    <span class="price">
+                                        <span>$</span><span class="price-small">899</span>
+                                        <span class="price-big">$499</span>
+                                    </span>
+                                </div>
+                                <h3>surfing</h3>
                                 <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Sceleriscue in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
                                 <button class="btn book-now">book now</button>
                             </li>
@@ -127,12 +151,12 @@
                 </div>
             </section>
             <section class="beautiful-trips">
-                <h1>Find a Tour by Beautiful Trips</h1>
+                <h2>Find a Tour by Beautiful Trips</h2>
                 <ul class="trips-list clr">
                     <li class="trip">
                         <img src="img/trip01.png" class="image" alt="promotional trip">
                         <div class="trip-description">
-                            <h2>promotional trip</h2>
+                            <h3>promotional trip</h3>
                             <span>Orlando, Air/3 Nights</span>
                             <button class="btn know-more">know more</button>
                         </div>
@@ -140,7 +164,7 @@
                     <li class="trip">
                         <img src="img/trip02.png" class="image" alt="promotional trip">
                         <div class="trip-description">
-                            <h2>promotional trip</h2>
+                            <h3>promotional trip</h3>
                             <span>Orlando, Air/3 Nights</span>
                             <button class="btn know-more">know more</button>
                         </div>
@@ -148,7 +172,7 @@
                     <li class="trip">
                         <img src="img/trip03.png" class="image" alt="promotional trip">
                         <div class="trip-description">
-                            <h2>promotional trip</h2>
+                            <h3>promotional trip</h3>
                             <span>Orlando, Air/3 Nights</span>
                             <button class="btn know-more">know more</button>
                         </div>
@@ -156,7 +180,7 @@
                     <li class="trip">
                         <img src="img/trip04.png" class="image" alt="promotional trip">
                         <div class="trip-description">
-                            <h2>promotional trip</h2>
+                            <h3>promotional trip</h3>
                             <span>Orlando, Air/3 Nights</span>
                             <button class="btn know-more">know more</button>
                         </div>
@@ -164,7 +188,7 @@
                     <li class="trip">
                         <img src="img/trip05.png" class="image" alt="promotional trip">
                         <div class="trip-description">
-                            <h2>promotional trip</h2>
+                            <h3>promotional trip</h3>
                             <span>Orlando, Air/3 Nights</span>
                             <button class="btn know-more">know more</button>
                         </div>
@@ -172,7 +196,7 @@
                     <li class="trip">
                         <img src="img/trip06.png" class="image" alt="promotional trip">
                         <div class="trip-description">
-                            <h2>promotional trip</h2>
+                            <h3>promotional trip</h3>
                             <span>Orlando, Air/3 Nights</span>
                             <button class="btn know-more">know more</button>
                         </div>
@@ -181,31 +205,31 @@
             </section>
             <section class="news-events">
                 <div class="wrapper">
-                    <h1>news &amp; events</h1>
+                    <h2>news &amp; events</h2>
                     <p class="text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Sceleriscue in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
                     <ul class="events-list clr">
                         <li class="event-item">
-                            <img width="350" height="227" src="img/news01.png" class="event" alt="news and events">
+                            <img src="img/news01.png" class="event" alt="news and events">
                             <div class="comments">
-                                <h2>Living the Travel Lifestyle</h2>
+                                <h3>Living the Travel Lifestyle</h3>
                                 <span class="user-name">Admin</span>
                                 <span class="date"> May 11, 2015</span>
                                 <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec!</p>
                             </div>
                         </li>
                         <li class="event-item">
-                            <img width="350" height="227" src="img/news02.png" class="event" alt="news and events">
+                            <img src="img/news02.png" class="event" alt="news and events">
                             <div class="comments">
-                                <h2>Living the Travel Lifestyle</h2>
+                                <h3>Living the Travel Lifestyle</h3>
                                 <span class="user-name">Admin</span>
                                 <span class="date"> May 11, 2015</span>
                                 <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec!</p>
                             </div>
                         </li>
                         <li class="event-item">
-                            <img width="350" height="227" src="img/news03.png" class="event" alt="news and events">
+                            <img src="img/news03.png" class="event" alt="news and events">
                             <div class="comments">
-                                <h2>Living the Travel Lifestyle</h2>
+                                <h3>Living the Travel Lifestyle</h3>
                                 <span class="user-name">Admin</span>
                                 <span class="date"> May 11, 2015</span>
                                 <p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec!</p>
@@ -216,14 +240,14 @@
             </section>
             <section class="luxury-travel">
                 <div class="wrapper">
-                    <h1>luxury travel</h1>
+                    <h2>luxury travel</h2>
                     <span>Peace of Mind guaranteed!</span>
                     <button class="btn find-tours">find tours</button>
                 </div>
             </section>
-            <section class="feedback">
+            <section class="feedback  clr">
                 <div class="wrapper">
-                    <ul class="contact-us clr">
+                    <ul class="contact-us">
                         <li class="contact-item">
                             <h2>Findfinder LLC</h2>
                             <address>1400 Pennsylvania Ave. Washington, DC</address>
@@ -257,12 +281,13 @@
                     </ul>
                 </div>
             </section>
-            <footer class="page-footer">
+            <footer class="page-footer clr">
                 <div class="wrapper">
                     <span class="copyright">© PSDfreebies.com 2015. All rights reserved.</span>
                     <span class="design-by">Design by:<span class="bee-icon"></span>PSDFreebies.com</span>
                 </div>
             </footer>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

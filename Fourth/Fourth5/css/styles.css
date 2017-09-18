@@ -10,8 +10,13 @@ a {
 }
 .wrapper {
     position: relative;
-    width: 1782px;
+    max-width: 1782px;
     margin: 0 auto;
+}
+.clr::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 /*=============================================================================================================
 
@@ -19,86 +24,79 @@ a {
 
 =============================================================================================================*/
 .page-header {
-    position: relative;
-    background: #f8f8f8;
-    padding-bottom: 45px;
-}
-.page-header::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.page-header .topbar{
     background: #333333;
     color: #777777;
     font-size: 13px;
+    padding: 0 19.2%;
 }
-.page-header .topbar::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.page-header .topbar .currency {
+.page-header .currency {
     float: left;
     margin-top: 15px;
-    margin-left: 305px;
 }
-.page-header .topbar #currency {
+.page-header #currency {
     border: none;
     background: #333333;
     color: #777777;
     outline: none;
     padding-right: 5px;
 }
-.page-header .topbar .basket {
+.page-header .basket {
     float: right;
     background: #00c8c8 url("../img/basket-icon.png") no-repeat 22px 14px;
     padding: 14px 35px;
-    margin-right: 305px;
 }
-.page-header .topbar .basket .purchases {
+.page-header .basket .purchases {
     border: none;
     outline: none;
     background: #00c8c8;
     color: white;
     margin-left: 20px;
 }
-.page-header .topbar .reg-sign-in {
+.page-header .reg-sign-in {
     float: right;
     margin-top: 15px;
     margin-right: 82px;
     text-transform: capitalize;
 }
-.page-header .topbar .reg-sign-in .register {
+.page-header .reg-sign-in .register {
     margin-right: 30px;
 }
-.page-header .logo {
+/*=============================================================================================================
+
+                    Clothing-categories
+
+=============================================================================================================*/
+.clothing-categories {
+    background: #f8f8f8;
+    padding-bottom: 45px;
+    padding-top: 32px;
+}
+.clothing-categories .logo {
     float: left;
     text-transform: uppercase;
     word-spacing: 5px;
-    margin-top: 32px;
 }
-.page-header .logo .avenue, .page-header .logo .fashion {
+.clothing-categories .logo .avenue, .clothing-categories .logo .fashion {
     color: #222222;
     font-size: 24px;
 }
-.page-header .logo .avenue {
+.clothing-categories .logo .avenue {
     font-weight: bold;
 }
-.page-header .main-menu {
+.clothing-categories .main-menu {
     float: right;
-    margin-top: 44px;
-    margin-right: 120px;
+    margin-top: 12px;
+    margin-right: 6.7%;
 }
-.page-header .main-menu .item {
+.clothing-categories .main-menu .item {
     position: relative;
     display: inline-block;
     margin-right: 50px;
 }
-.page-header .main-menu .item:last-child {
+.clothing-categories .main-menu .item:last-child {
     margin-right: 0;
 }
-.page-header .main-menu .item:not(:nth-child(3)):not(:nth-child(4))::after {
+.clothing-categories .main-menu .item:not(:nth-child(3)):not(:nth-child(4))::after {
     content: '';
     background: url("../img/custom-arrow.png") no-repeat center;
     width: 8px;
@@ -107,20 +105,20 @@ a {
     top: 130%;
     left: 0;
 }
-.page-header .main-menu .item .current {
+.clothing-categories .main-menu .item .current {
     color: #00c8c8;
 }
-.page-header .main-menu .item > a {
+.clothing-categories .main-menu .item > a {
     text-transform: uppercase;
     font-size: 13px;
     color: #222222;
 }
-.page-header .search-form {
+.clothing-categories .search-form {
     position: relative;
     float: right;
-    margin-top: 37px;
+    margin-top: 5px;
 }
-.page-header .search-form::before {
+.clothing-categories .search-form::before {
     content: '';
     background: url("../img/search-icon.png") no-repeat;
     width: 13px;
@@ -129,10 +127,9 @@ a {
     top: 7.5px;
     right: 11px;
 }
-.page-header .search-form .search {
+.clothing-categories .search-form .search {
     width: 190px;
     height: 30px;
-    outline: none;
     padding: 0 30px 0 10px;
     border: 1px solid #e7e7e7;
     background: transparent;
@@ -143,7 +140,7 @@ a {
 
 =============================================================================================================*/
 .intro {
-    background: url("../img/city.png") no-repeat center -140px;
+    background: url("../img/city.png") no-repeat center 20%;
     text-align: center;
 }
 .intro .darken {
@@ -154,21 +151,21 @@ a {
     height: 450px;
 }
 .intro .darken .intro-wrapper {
-    width: 1900px;
+    max-width: 1900px;
     margin: 0 auto;
 }
 .intro .darken .ave {
     position: absolute;
-    top: 15%;
     left: 0;
     right: 0;
+    top: 15%;
     font-family: 'Roboto', sans-serif;
     color: rgba(255, 255, 255, .05);
-    font-size: 450px;
 }
 .intro .darken .ave span {
     display: inline-block;
     margin-right: 0.69em;
+    font-size: 450px;
 }
 .intro .darken .ave span:last-child {
     margin-right: 0;
@@ -202,23 +199,42 @@ a {
     margin-top: 63px;
 }
 .content-wrapper {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .content .slider {
     position: relative;
     display: inline-block;
-    width: 570px;
+    width: 48.72%;
+    max-height: 710px;
+}
+.content .slider .photo {
+    position: relative;
+}
+.content .slider .photo .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.content .slider .photo .img.showed {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
 }
 .content .slider .prev,
 .content .slider .next {
     position: absolute;
-    width: 45px;
-    height: 55px;
     top: 50%;
     margin-top: -27px;
+    width: 45px;
+    height: 55px;
     background: url("../img/next-arrow.png") no-repeat center;
     cursor: pointer;
+    z-index: 10;
 }
 .content .slider .prev {
     transform: rotate(180deg);
@@ -317,7 +333,7 @@ a {
     background: url("../img/socials-sprite.png") no-repeat -169px;
 }
 .content .details .introduction .price {
-    display: inline-block;
+    display: block;
     font-size: 30px;
     color: #9a9a9a;
     margin-top: 20px;
@@ -404,31 +420,41 @@ a {
     margin: 55px 0 30px;
 }
 .content .details .buttons .btn {
-    height: 59px;
+    padding: 0;
     border: 2px solid #737373;
     background: transparent;
     text-transform: uppercase;
     font-size: 16px;
     color: #454647;
     letter-spacing: 0.2em;
-    padding-left: 40px;
     cursor: pointer;
-    width: 303px;
-    line-height: 59px;
+    width: 52.85%;
     outline: none;
-    vertical-align: middle;
+    line-height: 58px;
 }
 .content .details .buttons .btn:first-child {
     margin-right: 22px;
     background-color: #333333;
     color: white;
-    width: 241px;
+    width: 42%;
 }
-.content .details .buttons .basket {
-    background: url("../img/basket-icon.png") no-repeat 33px 54%;
+.content .details .buttons .btn:first-child::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/basket-icon.png") no-repeat;
+    width: 20px;
+    height: 21px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
-.content .details .buttons .heart {
-    background: url("../img/heart-icon.png") no-repeat 38px 54%;
+.content .details .buttons .btn:last-child::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/heart-icon.png") no-repeat;
+    width: 18px;
+    height: 19px;
+    margin-right: 9px;
+    vertical-align: middle;
 }
 .content .details .compare {
     display: inline-block;
@@ -446,16 +472,30 @@ a {
 }
 .content .data {
     margin-top: 38px;
+    position: relative;
+}
+.content .data .menuToggle {
+    display: none;
+    padding: 7px 15px;
+    background: #00c8c8;
+    border-radius: 5px;
+    margin-left: 5%;
+    color: #575153;
+    cursor: pointer;
+}
+.content .data .menuToggle:hover {
+    background: #FF0069;
+    color: #00c8c8;
 }
 .content .data .content-menu {
     background: #f8f8f8;
+    padding: 17px 0;
 }
 .content .data .content-menu .item {
     display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
     margin-right: 54px;
-    padding: 17px 0;
 }
 .content .data .content-menu .item:last-child {
     margin-right: 0;
@@ -489,124 +529,408 @@ a {
 }
 /*=============================================================================================================
 
-                    Footer
+                    About-us
 
 =============================================================================================================*/
-.page-footer {
+.about-us {
     margin-top: 124px;
     background: #f8f8f8;
-    padding-top: 60px;
+    padding: 60px 0 55px;
 }
-.page-footer::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.page-footer .footer-wrapper {
-    width: 1200px;
+.about-wrapper {
+    max-width: 1200px;
     margin: 0 auto;
 }
-.page-footer .footer-menu {
-    text-align: center;
+.about-us .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.page-footer .footer-menu .item {
-    display: inline-block;
-    margin-right: 95px;
-    vertical-align: top;
-}
-.page-footer .footer-menu .item:last-child {
-    margin-right: 0;
-}
-.page-footer .footer-menu .item .link {
+.about-us .footer-menu .item .link {
     display: block;
     font-size: 14px;
     color: #727272;
     margin-bottom: 16px;
-    text-align: left;
 }
-.page-footer .footer-menu .item .link:first-child {
+.about-us .footer-menu .item .link:first-child {
     font-size: 13px;
     color: #575153;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.page-footer .footer-menu .item .link:last-child {
+.about-us .footer-menu .item .link:last-child {
     margin-bottom: 0;
 }
-.page-footer .footer-menu .item .current {
+.about-us .footer-menu .item .current {
     color: #00c8c8;
 }
-.page-footer .footer-menu .item address {
+.about-us .footer-menu .item address {
     font-size: 14px;
     color: #727272;
-    text-align: left;
 }
-.page-footer .footer-menu .item address .phone {
-    display: inline-block;
-    margin-top: 30px;
+.about-us .footer-menu .item address .phone {
+    display: block;
+    margin-top: 32px;
 }
-.page-footer .footer-menu .item address .email {
-    display: inline-block;
-    margin-top: 17px;
+.about-us .footer-menu .item address .email {
+    display: block;
 }
-.page-footer .banners {
+.about-us .banners {
     margin-top: 50px;
     text-align: center;
 }
-.page-footer .banners .award {
-    display: inline-block;
+.about-us .banners .award {
+    float: left;
     background: #333333;
     font-weight: bold;
     color: white;
     font-size: 36px;
     text-transform: uppercase;
-    padding: 57px 67px;
-    margin-right: 26px;
+    width: 47.5%;
+    padding: 57px 0;
     line-height: 120%;
 }
-.page-footer .banners .award span {
+.about-us .banners .award span {
+    display: block;
+}
+.about-us .banners .award .weight {
     font-weight: normal;
 }
-.page-footer .banners .social {
-    display: inline-block;
+.about-us .banners .social {
+    float: right;
     background: #00c8c8;
-    padding: 81px 133px;
-    vertical-align: top;
+    width: 47.5%;
+    padding: 81px 0;
 }
-.page-footer .banners .social .social-link {
+.about-us .banners .social .social-link {
     display: inline-block;
     width: 35px;
     height: 35px;
-    margin-right: 55px;
+    margin-right: 10%;
 }
-.page-footer .banners .social .social-link:first-child {
-    margin-right: 40px;
+.about-us .banners .social .social-link:first-child {
+    margin-right: 7%;
 }
-.page-footer .banners .social .social-link:last-child {
+.about-us .banners .social .social-link:last-child {
     margin-right: 0;
 }
-.page-footer .banners .social .facebook {
+.about-us .banners .social .facebook {
     background: url("../img/social-sprite.png") no-repeat 0 0;
 }
-.page-footer .banners .social .twitter {
+.about-us .banners .social .twitter {
     background: url("../img/social-sprite.png") no-repeat -73px 0;
 }
-.page-footer .banners .social .instagram {
+.about-us .banners .social .instagram {
     background: url("../img/social-sprite.png") no-repeat -161px 0;
 }
-.page-footer .banners .social .pinterest {
+.about-us .banners .social .pinterest {
     background: url("../img/social-sprite.png") no-repeat -248px 0;
 }
-.page-footer .copyright {
+/*=============================================================================================================
+
+                    Footer
+
+=============================================================================================================*/
+.page-footer {
     text-align: right;
     background: #333333;
     color: #999999;
-    margin-top: 55px;
     padding: 15px 0;
 }
-.page-footer .copyright .avenue-fashion {
+.page-footer .avenue-fashion {
     float: left;
 }
-.page-footer .copyright .design-by {
-    margin-right: 35px;
+.page-footer .design-by {
+    margin-right: 3%;
+}
+/*=============================================================================================================
+
+                    Media
+
+=============================================================================================================*/
+@media screen and (max-width: 1500px) {
+    .intro .darken .ave {
+        top: 33%;
+    }
+    .intro .darken .ave span {
+        font-size: 350px;
+        margin-right: 0.4em;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .content .slider {
+        display: block;
+        margin: 0 auto 35px;
+        min-width: 550px;
+    }
+    .content .details {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .content .details .buttons .btn {
+        width: 33.1%;
+    }
+    .content .details .buttons .btn:first-child {
+        width: 27%;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .clothing-categories .logo {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .clothing-categories .main-menu {
+        float: none;
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 991px) {
+    .page-header {
+        padding: 0 5%;
+    }
+    .about-us .footer-menu {
+        justify-content: space-around;
+        padding: 0 10%;
+    }
+    .about-us .footer-menu .item {
+        width: 30%;
+        margin: 0 10% 40px;
+    }
+    .about-us .footer-menu .item:last-child {
+        margin-bottom: 0;
+        width: 40%;
+    }
+    .about-us .banners .award {
+        font-size: 28px;
+        padding: 50px 0;
+    }
+    .about-us .banners .social {
+        padding: 64px 0;
+    }
+}
+@media screen and (max-width: 960px) {
+    .intro .darken .ave {
+        top: 43%;
+    }
+    .intro .darken .ave span {
+        font-size: 300px;
+        margin-right: 0.2em;
+    }
+    .intro .darken .heading h1 {
+        font-size: 30px;
+    }
+    .intro .darken .heading h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .content .details .buttons .btn {
+        letter-spacing: normal;
+    }
+    .content .data .content-menu .item {
+        margin-right: 2%;
+        font-size: 14px;
+    }
+    .content .data .content-menu .item .item-link {
+        padding: 8px 5px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .clothing-categories {
+        text-align: center;
+    }
+    .clothing-categories .search-form {
+        float: none;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .clothing-categories .main-menu .item {
+        margin-right: 3%;
+    }
+    .about-us .banners .award {
+        padding: 41px 0;
+    }
+    .about-us .banners .social {
+        padding: 55px 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .about-us {
+        margin-top: 10px;
+    }
+    .about-us .banners .award {
+        width: 70%;
+        margin: 0 auto 15px;
+        font-size: 22px;
+        float: none;
+        padding: 35px 0;
+    }
+    .about-us .banners .social {
+        width: 70%;
+        float: none;
+        margin: 0 auto;
+        padding: 42px 0;
+    }
+    .page-footer {
+        text-align: center;
+    }
+    .page-footer .avenue-fashion {
+        display: block;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .page-footer .design-by {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .intro .darken {
+        height: 300px;
+    }
+    .intro .darken .ave {
+        top: 37%;
+    }
+    .intro .darken .ave span {
+        font-size: 220px;
+    }
+    .intro .darken .heading {
+        margin-top: -31px;
+    }
+    .intro .darken .heading h1 {
+        font-size: 24px;
+    }
+    .intro .darken .heading h2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .content .details {
+        width: 98%;
+    }
+    .content .details .options .box {
+        margin: 0 30px 20px 0;
+    }
+    .content .details .buttons {
+        margin: 30px 0;
+    }
+    .content .details .buttons .btn {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .content .details .buttons .btn:first-child {
+        display: block;
+        margin: 0 auto 15px;
+        width: 50%;
+    }
+    .about-us .footer-menu {
+        padding: 0;
+    }
+    .about-us .footer-menu .item {
+        width: 100%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+    .about-us .footer-menu .item:last-child {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .page-header {
+        padding: 0 1% 10px;
+    }
+    .page-header .reg-sign-in {
+        float: left;
+    }
+    .content .slider {
+        min-width: 200px;
+        width: 96%;
+    }
+    .content .details .introduction .introduction-menu {
+        display: block;
+        margin-top: 20px;
+    }
+    .content .details .introduction .introduction-menu .introduction-item .introduction-link {
+        margin-right: 10px;
+    }
+    .content .details .introduction .socials {
+        display: block;
+        margin-top: 20px;
+    }
+    .content .data .menuToggle {
+        display: inline-block;
+    }
+    .content .data .content-menu {
+        display: none;
+        position: absolute;
+        background: none;
+        left: 5%;
+        top: 30px;
+    }
+    .content .data .content-menu .item {
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .content .data .content-menu .item .item-link.current {
+        color: white;
+    }
+    .content .data .content-menu .item .item-link {
+        background: grey;
+        border-radius: 5px;
+        color: black;
+    }
+    .content .data .content-menu .item .item-link:hover {
+        box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, .6), -2px -2px 1px 0 rgba(0, 0, 0, .6);
+    }
+}
+@media screen and (max-width: 530px) {
+    .intro .darken .ave {
+        top: 64%;
+    }
+    .intro .darken .ave span {
+        margin-right: 0.15em;
+        font-size: 126px;
+    }
+    .intro .darken .heading h1 {
+        font-size: 20px;
+    }
+    .intro .darken .heading h2 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .about-us .banners .award {
+        width: 90%;
+        font-size: 20px;
+        padding: 26px 0;
+    }
+    .about-us .banners .social {
+        width: 90%;
+        padding: 31px 0;
+    }
+}
+@media screen and (max-width: 455px) {
+    .clothing-categories .main-menu {
+        margin: 15px 0 0 5%;
+    }
+    .clothing-categories .main-menu .item {
+        display: block;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .clothing-categories .main-menu .item:last-child {
+        margin-bottom: 0;
+    }
+    .content .details .buttons .btn {
+        width: 75%;
+    }
+    .content .details .buttons .btn:first-child {
+        width: 65%;
+    }
 }
