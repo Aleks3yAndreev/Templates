@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ave</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -9,30 +10,30 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     </head>
     <body>
-        <header class="page-header">
-            <div class="topbar">
-                <div class="wrapper">
-                    <div class="currency">
-                        <span>Currency:</span>
-                        <select name="currency" id="currency">
-                            <option value="gbp">GBP</option>
-                            <option value="dollar">USD</option>
-                            <option value="rur">RUR</option>
-                            <option value="jpy">JPY</option>
-                            <option value="cny">CNY</option>
-                        </select>
-                    </div>
-                    <div class="basket">
-                        <select name="purchases" class="purchases">
-                            <option value="empty">empty</option>
-                        </select>
-                    </div>
-                    <div class="reg-sign-in">
-                        <a href="#" title="register" class="register">register</a>
-                        <a href="#" title="sign in" class="sign-in">sign in</a>
-                    </div>
+        <header class="page-header clr">
+            <div class="wrapper">
+                <div class="currency">
+                    <label for="currency">Currency:</label>
+                    <select name="currency" id="currency">
+                        <option value="gbp">GBP</option>
+                        <option value="dollar">USD</option>
+                        <option value="rur">RUR</option>
+                        <option value="jpy">JPY</option>
+                        <option value="cny">CNY</option>
+                    </select>
+                </div>
+                <div class="basket">
+                    <select name="purchases" class="purchases" title="basket">
+                        <option value="empty">empty</option>
+                    </select>
+                </div>
+                <div class="reg-sign-in">
+                    <a href="#" title="register" class="register">register</a>
+                    <a href="#" title="sign in" class="sign-in">sign in</a>
                 </div>
             </div>
+        </header>
+        <section class="clothing-categories clr">
             <div class="wrapper">
                 <div class="logo">
                     <a href="#" title="avenue fashion" class="avenue">avenue</a>
@@ -64,8 +65,7 @@
                                 </li>
                             </ul>
                             <div class="banner">
-                                Autumn sale!<br>
-                                <span>up to 50% off</span>
+                                Autumn sale!<span>up to 50% off</span>
                             </div>
                         </div>
                     </li>
@@ -86,16 +86,19 @@
                 <span class="ave"><span>a</span><span>v</span><span>e</span></span>
                 <button class="shop-collection">shop men’s collection</button>
             </div>
-        </header>
+        </section>
         <section class="offer">
             <div class="wrapper">
-                <nav class="offer-menu">
-                    <a href="#" title="popular" class="offer-link current">popular</a>
-                    <a href="#" title="new arrivals" class="offer-link">new arrivals</a>
-                    <a href="#" title="best sellers" class="offer-link">best sellers </a>
-                    <a href="#" title="special offers" class="offer-link">special offers</a>
-                    <a href="#" title="coming soon" class="offer-link">coming soon</a>
-                </nav>
+                <div class="toggle">
+                    <div class="menuToggle">Menu</div>
+                    <nav class="offer-menu">
+                        <a href="#" title="popular" class="offer-link current">popular</a>
+                        <a href="#" title="new arrivals" class="offer-link">new arrivals</a>
+                        <a href="#" title="best sellers" class="offer-link">best sellers </a>
+                        <a href="#" title="special offers" class="offer-link">special offers</a>
+                        <a href="#" title="coming soon" class="offer-link">coming soon</a>
+                    </nav>
+                </div>
                 <div class="popular-offer">
                     <div class="model">
                         <img class="img" src="img/model1.png" alt="photo">
@@ -182,8 +185,8 @@
                 </ul>
             </div>
         </section>
-        <footer class="page-footer">
-            <div class="footer-wrapper">
+        <section class="about-us clr">
+            <div class="about-wrapper">
                 <ul class="footer-menu">
                     <li class="item">
                         <a href="#" title="Information" class="link">Information</a>
@@ -230,8 +233,8 @@
                 </ul>
                 <div class="banners">
                     <div class="award">
-                        award winner<br>
-                        <span>fashion awards 2016</span>
+                        <span>award winner</span>
+                        <span class="weight">fashion awards 2016</span>
                     </div>
                     <div class="social">
                         <a href="#" title="facebook" class="social-link facebook"></a>
@@ -241,13 +244,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="footer-wrapper">
-                    <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
-                    <span class="design-by">Design by RobbyDesigns.com</span>
-                    <span class="dev-by">Dev by Loremipsum.com</span>
-                </div>
+        </section>
+        <footer class="page-footer">
+            <div class="about-wrapper">
+                <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
+                <span class="design-by">Design by RobbyDesigns.com</span>
+                <span>Dev by Loremipsum.com</span>
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -8,12 +8,12 @@ a {
     text-decoration: none;
 }
 .base-wrapper {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 .wrapper {
     position: relative;
-    width: 1171px;
+    max-width: 1171px;
     margin: 0 auto;
 }
 .facebook {
@@ -32,7 +32,7 @@ a {
     background: url("../img/whatsapp.png") no-repeat center;
     margin-right: 0;
 }
-h1 {
+h2 {
     font-weight: normal;
     color: #5f5f5f;
     font-family: 'Oswald', sans-serif;
@@ -40,7 +40,7 @@ h1 {
     font-size: 37px;
     letter-spacing: 2px;
 }
-h2 {
+h3 {
     font-family: 'Oswald', sans-serif;
     color: #5f5f5f;
 }
@@ -68,48 +68,46 @@ h2 {
 
 .main-section {
     background: url("../img/banner01.png") no-repeat top;
-    height: 934px;
 }
 .main-section .tagline {
     display: inline-block;
-    margin-top: 303px;
+    margin-top: 25.9%;
 }
 .main-section .tagline h1 {
     color: white;
     font-size: 48px;
-    letter-spacing: normal;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 .main-section .tagline span {
     display: block;
-    width: 501px;
+    width: 48.5%;
     color: white;
     font-size: 30px;
-    margin-top: 25px;
+    margin-top: 2.5%;
     margin-left: 42px;
     line-height: 120%;
 }
 .main-section .search-tours {
     position: absolute;
-    top: 110px;
-    right: 13px;
-    width: 509px;
-    height: 600px;
+    top: 25%;
+    right: 1.2%;
+    width: 43.5%;
     background-color: white;
     text-align: center;
+    padding: 39px 0 63px 0;
 }
 .main-section .search-tours h2 {
     text-align: left;
-    margin: 39px 0 20px 78px;
-    text-transform: uppercase;
+    margin: 0 0 20px 14.8%;
     font-size: 48px;
-    letter-spacing: 2px;
 }
 .main-section .search-tours span {
     font-size: 20px;
     color: #5f5f5f;
 }
 .main-section .search-tours .search-tour-form .tour-list {
-    margin: 33px auto 27px;
+    margin: 33px auto 30px;
     font-size: 16px;
 }
 .main-section .search-tours .search-tour-form .tour-list li {
@@ -119,11 +117,10 @@ h2 {
     margin-bottom: 0;
 }
 .main-section .search-tours .search-tour-form .tour-list input {
-    width: 425px;
-    height: 55px;
+    width: 83.5%;
     border: none;
     border-radius: 10px;
-    padding: 0 50px 0 21.8px;
+    padding: 18.5px 50px 18.5px 22px;
     font-size: 16px;
 }
 .main-section .search-tours .search-tour-form .tour-list input:focus::-webkit-input-placeholder {
@@ -139,19 +136,19 @@ h2 {
     transition: opacity 0.3s ease;
 }
 .main-section .search-tours .search-tour-form .tour-list .find-tour {
-    background: #f2f2f2 url("../img/loupe02.png") no-repeat 382px 20px;
+    background: #f2f2f2 url("../img/loupe02.png") no-repeat 94% 49%;
 }
 .main-section .search-tours .search-tour-form .tour-list .destination {
-    background: #f2f2f2 url("../img/plane.png") no-repeat 382px 20px;
+    background: #f2f2f2 url("../img/plane.png") no-repeat 94% 49%;
 }
 .main-section .search-tours .search-tour-form .tour-list .type {
-    background: #f2f2f2 url("../img/sleep.png") no-repeat 382px 20px;
+    background: #f2f2f2 url("../img/sleep.png") no-repeat 94% 49%;
 }
 .main-section .search-tours .search-tour-form .tour-list .month {
-    background: #f2f2f2 url("../img/month.png") no-repeat 382px 20px;
+    background: #f2f2f2 url("../img/month.png") no-repeat 94% 49%;
 }
 .main-section .search-tours .search-tour-form .find-tours {
-    width: 425px;
+    width: 83.5%;
     height: 55px;
     background-color: #006fe6;
     font-weight: bold;
@@ -161,18 +158,16 @@ h2 {
     border-radius: 5px;
 }
 .main-section .tour-description {
-    height: 195px;
-    padding-top: 76px;
+    padding: 5.3% 0;
     background-color: rgba(71, 160, 255, .85);
-    margin-top: 188px;
+    margin-top: 11%;
 }
-.main-section p {
+.main-section .tour-description p {
     color: white;
     font-size: 20px;
-    width: 571px;
+    width: 48.8%;
     margin-left: 22px;
 }
-
 /* ----------------------------------------------------------------------------------
 
             Header
@@ -181,12 +176,7 @@ h2 {
 
 .page-header {
     background: rgba(18,22,29, .9);
-    padding-bottom: 10px;
-}
-.page-header::after {
-    content: "";
-    display: block;
-    clear: both;
+    padding-bottom: 11px;
 }
 .page-header .contacts-bar {
     min-height: 31px;
@@ -194,7 +184,7 @@ h2 {
 }
 .page-header .contacts-bar .main-contacts {
     float: left;
-    margin: 10px 0 30px;
+    margin-top: 10px;
     color: white;
     font-size: 13px;
 }
@@ -233,7 +223,7 @@ h2 {
 }
 .page-header .contacts-bar .social-links a {
     float: left;
-    margin-right: 33.5px;
+    margin-right: 33px;
     width: 17px;
     height: 15px;
 }
@@ -243,11 +233,19 @@ h2 {
 .page-header .contacts-bar .search-form {
     position: relative;
     float: right;
-    margin: 4px 0 0 30px;
+    margin: 4px 0 0 2.5%;
+}
+.page-header .contacts-bar .search-form::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url("../img/loupe.png") no-repeat center;
+    right: 5px;
+    top: 4px;
 }
 .page-header .contacts-bar .search-form .search {
     background: #8d9190;
-    width: 110px;
     height: 23px;
     border: none;
     border-radius: 4px;
@@ -255,21 +253,7 @@ h2 {
     font-size: 12px;
     line-height: 23px;
     vertical-align: middle;
-    transition: width 0.3s ease;
-}
-.page-header .contacts-bar .search-form .search-btn {
-    position: absolute;
-    top: 4px;
-    right: 5px;
-    width: 15px;
-    height: 15px;
-    background: url("../img/loupe.png") no-repeat center;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-.page-header .contacts-bar .search-form .search:focus {
-    width: 200px;
+    color: white;
 }
 .page-header .contacts-bar .search-form .search::-webkit-input-placeholder {
     color: rgba(255, 255, 255, .6);
@@ -281,30 +265,61 @@ h2 {
     color: rgba(255, 255, 255, .6);
 }
 .page-header .navigation-bar .logo {
-    clear: both;
-    display: block;
-    background: url("../img/logo.png") no-repeat;
-    width: 200px;
-    height: 47px;
+    font-family: 'Oswald', sans-serif;
+    background: url("../img/logo.png") no-repeat left 2px;
     float: left;
-    margin-left: 22px;
+    margin: 1.3% 0 0 1.8%;
+    padding-left: 54px;
+    text-transform: uppercase;
+    vertical-align: top;
 }
-.page-header .navigation-bar .menu {
-    margin-top: 10px;
+.page-header .navigation-bar .logo .logo-title {
+    font-size: 36px;
+    color: white;
+}
+.page-header .navigation-bar .logo .logo-title span {
+    color: #007bff;
+}
+.page-header .navigation-bar .logo .logo-site {
+    display: block;
+    color: white;
+    font-size: 13px;
+    margin: 4px 0 0 5px;
+    letter-spacing: 3px;
+}
+.page-header .navigation-bar .box {
+    position: relative;
     float: right;
+    margin-top: 30px;
+}
+.page-header .navigation-bar .box .menuToggle {
+    display: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px 5px;
+    background: rgb(0, 111, 230);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.page-header .navigation-bar .box .menuToggle:hover {
+    background: #FF007F;
+}
+.page-header .navigation-bar .box .menu {
     text-transform: capitalize;
     font-size: 20px;
 }
-.page-header .navigation-bar .menu .item {
+.page-header .navigation-bar .box .menu .item {
     color: white;
     font-size: 20px;
     margin-right: 53px;
 }
-.page-header .navigation-bar .menu .item:hover {
-    text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white;
-    transition: 0.2s ease;
+.page-header .navigation-bar .box .menu .item:hover {
+    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+    transition: text-shadow 0.2s ease;
 }
-.page-header .navigation-bar .menu .item:last-child {
+.page-header .navigation-bar .box .menu .item:last-child {
     margin-right: 0;
 }
 /* ----------------------------------------------------------------------------------
@@ -313,54 +328,49 @@ h2 {
 
 ----------------------------------------------------------------------------------- */
 .tour-type {
-    background: url("../img/banner02.png") no-repeat top;
+    background: url("../img/banner02.png") no-repeat bottom fixed;
 }
 .tour-type .white-mask {
     background: rgba(255, 255, 255, .71);
     padding-top: 105px;
-    padding-bottom: 140px;
+    padding-bottom: 125px;
 }
-.tour-type .white-mask h1 {
+.tour-type .white-mask h2 {
     text-align: center;
     margin-bottom: 47px;
 }
 .tour-type .white-mask p {
     text-align: center;
     margin: 0 auto;
-    width: 955px;
+    width: 82%;
     font-size: 20px;
 }
 .tour-type .white-mask .type-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 65px;
     font-family: 'Oswald', sans-serif;
 }
 .tour-type .white-mask .type-list .item {
-    width: 266px;
-    height: 266px;
-    float: left;
+    position: relative;
+    width: 22.2%;
+    /*text-align: center;*/
+}
+.tour-type .white-mask .type-list .img {
+    width: 100%;
+    height: auto;
+}
+.tour-type .white-mask .type-list span {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
     text-align: center;
-    vertical-align: middle;
-    line-height: 266px;
     color: white;
     text-transform: uppercase;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-.tour-type .white-mask .type-list .item:not(:nth-child(4n+1)) {
-    margin-left: 30px;
-}
-.tour-type .white-mask .type-list .north-america {
-    background: url("../img/NorthAmerica.png") no-repeat;
-}
-.tour-type .white-mask .type-list .north-america02 {
-    background: url("../img/NorthAmerica2.png") no-repeat;
-}
-.tour-type .white-mask .type-list .san-francisco {
-    background: url("../img/SanFrancisco.png") no-repeat;
-}
-.tour-type .white-mask .type-list .amazon {
-    background: url("../img/Amazon.png") no-repeat;
+    font-size: 26px;
+    font-weight: normal;
 }
 /* ----------------------------------------------------------------------------------
 
@@ -368,54 +378,53 @@ h2 {
 
 ----------------------------------------------------------------------------------- */
 .deals-discounts {
-    background: url("../img/banner03.png") no-repeat 50% -420px;
+    background: url("../img/banner03.png") no-repeat 50% center fixed;
 }
 .deals-discounts .blue-mask {
     background: rgba(71, 160, 255, .85);
     padding-top: 119px;
     padding-bottom: 63px;
 }
-.deals-discounts .blue-mask h1{
+.deals-discounts .blue-mask h2 {
     color: white;
     text-align: center;
 }
 .deals-discounts .blue-mask .deals-list {
-    margin-top: 75px;
+    margin: 75px -1.1% 0;
 }
 .deals-discounts .blue-mask .deals-list .deal-item {
-    position: relative;
-    width: 373px;
-    height: 588px;
+    width: 31%;
     background-color: white;
     float: left;
-    margin-right: 26px;
+    margin: 0 1.1% 2.2%;
+    padding-bottom: 25px;
 }
-.deals-discounts .blue-mask .deals-list .deal-item:last-child {
-    margin-right: 0;
+.deals-discounts .blue-mask .deals-list .deal-item .offer {
+    position: relative;
 }
-.deals-discounts .blue-mask .deals-list .deal-item .price {
+.deals-discounts .blue-mask .deals-list .deal-item .offer .img {
+    width: 100%;
+}
+.deals-discounts .blue-mask .deals-list .deal-item .offer .price {
     position: absolute;
-    top: 244px;
-    left: 50%;
-    margin-left: -84.5px;
-    width: 169px;
-    height: 56px;
+    left: 27.75%;
+    bottom: -22px;
+    width: 44.5%;
+    padding: 13px 0;
     background-color: #47a0ff;
     text-align: center;
-    vertical-align: middle;
-    line-height: 56px;
     color: white;
     font-size: 24px;
     letter-spacing: 2px;
     font-family: 'Oswald', sans-serif;
 }
-.deals-discounts .blue-mask .deals-list .deal-item .price-small {
+.deals-discounts .blue-mask .deals-list .deal-item .offer .price-small {
     text-decoration: line-through;
 }
-.deals-discounts .blue-mask .deals-list .deal-item .price-big {
+.deals-discounts .blue-mask .deals-list .deal-item .offer .price-big {
     font-size: 30px;
 }
-.deals-discounts .blue-mask .deals-list .deal-item h2 {
+.deals-discounts .blue-mask .deals-list .deal-item h3 {
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
@@ -429,8 +438,8 @@ h2 {
 }
 .deals-discounts .blue-mask .deals-list .deal-item .book-now {
     display: block;
-    height: 54px;
-    width: 190px;
+    width: 51%;
+    padding: 18px 0;
     margin: 0 auto;
     background-color: rgb(0, 111, 230);
     border-radius: 5px;
@@ -444,40 +453,32 @@ h2 {
 .beautiful-trips {
     padding-top: 115px;
 }
-.beautiful-trips h1 {
+.beautiful-trips h2 {
     text-align: center;
 }
 .beautiful-trips .trips-list {
-    margin-top: 70px;
+    margin: 70px -0.5px 0;
     color: white;
 }
 .beautiful-trips .trips-list .trip {
     overflow: hidden;
     position: relative;
     float: left;
-    width: 532.6px;
-    height: 410px;
-    margin-right: 1px;
-    margin-bottom: 1px;
+    width: 33.2%;
+    margin: 0 0.5px 1px;
     background-color: black;
 }
-.beautiful-trips .trips-list .trip:nth-child(3n) {
-    margin-right: 0;
-}
-.beautiful-trips .trips-list .trip:nth-child(n+4) {
-    margin-bottom: 0;
-}
 .beautiful-trips .trips-list .image {
+    width: 100%;
+    height: auto;
     opacity: 0.5;
-    transform: scale(1.2);
 }
 .beautiful-trips .trips-list .trip .trip-description {
     position: absolute;
-    top: 180px;
-    left: 50%;
-    margin-left: -130px;
+    top: 44%;
+    left: 25%;
 }
-.beautiful-trips .trips-list .trip h2 {
+.beautiful-trips .trips-list .trip .trip-description h3 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -486,16 +487,17 @@ h2 {
     margin-bottom: 15px;
     color: white;
 }
-.beautiful-trips .trips-list .trip span {
+.beautiful-trips .trips-list .trip .trip-description span {
     display: block;
     text-align: center;
+    font-size: 20px;
 }
-.beautiful-trips .trips-list .trip .know-more {
+.beautiful-trips .trips-list .trip .trip-description .know-more {
     display: none;
     margin: 20px auto;
     background: #006fe6;
-    width: 154px;
-    height: 43px;
+    width: 61%;
+    padding: 14px 0;
     font-size: 14px;
     border-radius: 5px;
 }
@@ -518,36 +520,32 @@ h2 {
     padding-top: 100px;
     padding-bottom: 118px;
 }
-.news-events h1 {
+.news-events h2 {
     text-align: center;
 }
 .news-events .text {
-    width: 820px;
+    width: 70%;
     margin: 50px auto 0;
     font-size: 20px;
     text-align: center;
 }
 .news-events .events-list {
-    margin: 62px auto 0;
+    margin: 62px -1.1% 0;
 }
 .news-events .events-list .event-item {
     float: left;
-    width: 373px;
-    height: 497px;
+    width: 31%;
+    padding: 8px 12px 35px;
     background-color: white;
-    margin-right: 26px;
-}
-.news-events .events-list .event-item:last-child {
-    margin-right: 0;
+    margin: 0 1.1% 2.2%;
 }
 .news-events .events-list .event-item .event {
-    display: block;
-    margin: 8px auto 40px;
+    width: 100%;
 }
 .news-events .events-list .event-item .comments {
-    margin-left: 24px;
+    margin: 40px 0 0 12px;
 }
-.news-events .events-list .event-item h2 {
+.news-events .events-list .event-item h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -562,7 +560,7 @@ h2 {
     font-size: 15px;
     line-height: 21px;
     vertical-align: middle;
-    width: 150px;
+    width: 44.5%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -580,7 +578,7 @@ h2 {
     margin-top: 44px;
     margin-right: 43px;
     font-size: 15px;
-    line-height: 23px;
+    line-height: 155%;
 }
 /* ----------------------------------------------------------------------------------
 
@@ -589,10 +587,10 @@ h2 {
 ----------------------------------------------------------------------------------- */
 .luxury-travel {
     background: url("../img/banner04.png") no-repeat top;
-    min-height: 696px;
     padding-top: 215px;
+    padding-bottom: 135px;
 }
-.luxury-travel h1 {
+.luxury-travel h2 {
     color: white;
     letter-spacing: 2px;
     font-size: 100px;
@@ -628,21 +626,13 @@ h2 {
     padding-bottom: 105px;
 }
 .feedback .contact-us {
-    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .feedback .contact-us .contact-item {
-    float: left;
     font-size: 15px;
     color: #7c7c7c;
-}
-.feedback .contact-us .contact-item:first-child {
-    margin-right: 73px;
-}
-.feedback .contact-us .contact-item:nth-child(2) {
-    margin-right: 110px;
-}
-.feedback .contact-us .contact-item:nth-child(3) {
-    margin-right: 90px;
 }
 .feedback .contact-us .contact-item h2 {
     font-size: 20px;
@@ -679,16 +669,17 @@ h2 {
 .feedback .contact-us .contact-item .follow-us .follow-link:last-child {
     margin-right: 0;
 }
+.feedback .contact-us .contact-item .follow-us .follow-link:hover {
+    background-color: #006fe6 ;
+}
 .feedback .contact-us .contact-item .subscribe-form {
     position: relative;
 }
 .feedback .contact-us .contact-item .subscribe-form input {
     background-color: #f2f2f2;
     border: none;
-    padding-left: 18.25px;
-    padding-right: 85px;
-    height: 55px;
-    width: 273px;
+    padding: 20px 85px 20px 20px;
+    width: 100%;
     font-size: 13px;
     outline: none;
     border-radius: 5px;
@@ -699,8 +690,8 @@ h2 {
     right: 5px;
     background-color: #006fe6;
     border-radius: 5px;
-    width: 76px;
-    height: 45px;
+    width: 28%;
+    padding: 14.5px 0;
     font-size: 14px;
 }
 /* ----------------------------------------------------------------------------------
@@ -732,4 +723,404 @@ h2 {
     width: 29px;
     height: 26px;
     margin: 0 5px 0 10px;
+}
+/* ----------------------------------------------------------------------------------
+
+            Media
+
+----------------------------------------------------------------------------------- */
+@media screen and (max-width: 1300px) {
+    .beautiful-trips .trips-list .trip .trip-description h3 {
+        font-size: 20px;
+    }
+    .beautiful-trips .trips-list .trip .trip-description span {
+        font-size: 16px;
+    }
+    .luxury-travel h2 {
+        font-size: 74px;
+    }
+    .luxury-travel span {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .page-header .contacts-bar .main-contacts {
+        margin-left: 2%;
+    }
+    .page-header .contacts-bar .main-contacts .contacts {
+        margin-right: 15px;
+    }
+    .page-header .contacts-bar .social-links {
+        float: left;
+        margin-left: 14%;
+    }
+    .page-header .contacts-bar .search-form {
+        float: none;
+        display: inline-block;
+    }
+    .page-header .navigation-bar .logo {
+
+    }
+    .page-header .navigation-bar .box {
+        float: left;
+        margin-left: 16%;
+    }
+    .page-header .navigation-bar .box .menu .item {
+        margin-right: 20px;
+    }
+    .deals-discounts .blue-mask .deals-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0 0;
+    }
+    .deals-discounts .blue-mask .deals-list .deal-item {
+        width: 45%;
+        margin: 0 2% 23px;
+    }
+    .news-events .events-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0 0;
+    }
+    .news-events .events-list .event-item {
+        width: 45%;
+        margin: 0 2% 23px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .main-section .tagline {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .main-section .tagline span {
+        display: inline-block;
+        margin: 25px 0 0;
+        width: 75%;
+    }
+    .main-section .search-tours {
+        position: static;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .main-section .search-tours h2 {
+        font-size: 36px;
+    }
+    .main-section .search-tours .search-tour-form .find-tours {
+        width: 50%;
+    }
+    .main-section .tour-description {
+        margin-top: 0;
+        padding: 1% 0;
+    }
+    .main-section .tour-description p {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    .feedback .contact-us {
+        justify-content: center;
+    }
+    .feedback .contact-us .contact-item {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    .feedback .contact-us .contact-item .subscribe-form input {
+        width: 70%;
+        padding: 15px 70px 15px 10px;
+    }
+    .feedback .contact-us .contact-item .subscribe-form .submit {
+        width: 15%;
+        padding: 10px 0;
+        top: 10%;
+        left: 54%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .page-header .contacts-bar .social-links {
+        margin-left: 3%;
+    }
+    .tour-type .white-mask {
+        padding: 30px 0 40px;
+    }
+    .tour-type .white-mask .type-list {
+        padding: 0 15%;
+        justify-content: space-between;
+    }
+    .tour-type .white-mask .type-list .item {
+        width: 45%;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .deals-discounts .blue-mask .deals-list .deal-item h3 {
+        font-size: 26px;
+    }
+    .beautiful-trips {
+        padding-top: 40px;
+    }
+    .beautiful-trips .trips-list .trip {
+        width: 49.8%;
+    }
+    .news-events,
+    .feedback {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .luxury-travel {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    .luxury-travel h2 {
+        font-size: 48px;
+    }
+    .luxury-travel span {
+        font-size: 18px;
+    }
+    .luxury-travel .find-tours {
+        width: 110px;
+        height: 110px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 906px) {
+    .page-header .contacts-bar .social-links {
+        margin: 2% 0 1% 1.5%;
+    }
+    .page-header .contacts-bar .social-links::after {
+        content: '';
+        display: none;
+    }
+    .page-header .contacts-bar .search-form {
+        float: right;
+        margin-right: 3.9%;
+    }
+    .page-header .navigation-bar .box {
+        margin-left: 6%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .feedback .contact-us .contact-item {
+        width: 80%;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+    .feedback .contact-us .contact-item h2 {
+        margin-bottom: 25px;
+    }
+    .feedback .contact-us .contact-item .support a {
+        margin: 0 auto 15px;
+    }
+    .feedback .contact-us .contact-item .follow-us .follow-link {
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+    .feedback .contact-us .contact-item .subscribe-form input {
+        width: 50%;
+        padding-right: 110px;
+    }
+    .feedback .contact-us .contact-item .subscribe-form .submit {
+        left: 59%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-section .tagline {
+        width: 100%;
+    }
+    .main-section .tagline h1 {
+        font-size: 26px;
+    }
+    .main-section .tagline span {
+        font-size: 18px;
+    }
+    .main-section .search-tours {
+        width: 70%;
+    }
+    .main-section .search-tours h2 {
+        font-size: 26px;
+    }
+    .main-section .search-tours span {
+        font-size: 18px;
+    }
+    .page-header .navigation-bar .box {
+        margin-top: 13px;
+    }
+    .page-header .navigation-bar .box .menuToggle {
+        display: inline-block;
+    }
+    .page-header .navigation-bar .box .menu {
+        position: absolute;
+        margin: 0;
+        display: none;
+        left: -13%;
+        top: 40px;
+        z-index: 10;
+    }
+    .page-header .navigation-bar .box .menu .item {
+        display: block;
+        margin: 0 0 5%;
+        background-color: #47a0ff;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 690px) {
+    .page-header .contacts-bar {
+        padding-bottom: 5px;
+        padding-left: 2%;
+    }
+    .page-header .contacts-bar .main-contacts {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+    .page-header .contacts-bar .search-form {
+        float: none;
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .page-header .contacts-bar .social-links {
+        float: none;
+        display: block;
+        margin: 0;
+        overflow: hidden;
+    }
+    .page-header .navigation-bar .logo .logo-title {
+        font-size: 28px;
+    }
+    .tour-type .white-mask h2 {
+        font-size: 26px;
+    }
+    .tour-type .white-mask p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .tour-type .white-mask .type-list {
+        justify-content: center;
+    }
+    .tour-type .white-mask .type-list .item {
+        width: 60%;
+    }
+    .tour-type .white-mask .type-list span {
+        font-size: 20px;
+    }
+    .deals-discounts .blue-mask {
+        padding: 35px 0 40px;
+    }
+    .deals-discounts .blue-mask h2 {
+        font-size: 26px;
+    }
+    .deals-discounts .blue-mask .deals-list .deal-item {
+        width: 100%;
+        float: none;
+        margin: 0 auto 15px;
+    }
+    .deals-discounts .blue-mask .deals-list .deal-item .offer .price {
+        width: 50%;
+        left: 25%;
+    }
+    .deals-discounts .blue-mask .deals-list .deal-item p {
+        margin: 0 0 39px;
+        text-align: center;
+    }
+    .beautiful-trips h2 {
+        font-size: 26px;
+    }
+    .beautiful-trips .trips-list {
+        margin: 20px 0 0;
+    }
+    .beautiful-trips .trips-list .trip {
+        width: 98%;
+        float: none;
+        margin: 0 auto 1px;
+    }
+    .beautiful-trips .trips-list .trip .trip-description {
+        left: 35%;
+    }
+    .beautiful-trips .trips-list .trip .trip-description h3 {
+        font-size: 18px;
+    }
+    .beautiful-trips .trips-list .trip .trip-description span {
+        font-size: 14px;
+    }
+    .news-events h2 {
+        font-size: 26px;
+    }
+    .news-events .text {
+        width: 100%;
+        font-size: 16px;
+    }
+    .news-events .events-list .event-item {
+        width: 100%;
+        float: none;
+        margin: 0 auto 15px;
+    }
+    .luxury-travel h2 {
+        font-size: 36px;
+    }
+    .luxury-travel span {
+        font-size: 16px;
+    }
+    .page-footer .copyright {
+        display: block;
+        text-align: center;
+    }
+    .page-footer .design-by {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .feedback .contact-us .contact-item .subscribe-form input {
+        width: 80%;
+    }
+    .feedback .contact-us .contact-item .subscribe-form .submit {
+        width: 20%;
+        padding: 10px 10px;
+        left: 69%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main-section .search-tours {
+        width: 96%;
+    }
+    .page-header .contacts-bar .main-contacts .contacts {
+        display: block;
+        float: none;
+        margin: 0 0 7px;
+    }
+    .page-header .contacts-bar .main-contacts .contacts:last-child {
+        margin-bottom: 0;
+    }
+    .page-header .navigation-bar .box {
+        margin-left: 2%;
+    }
+    .page-header .navigation-bar .box .menu {
+        margin-left: -9%;
+    }
+    .tour-type .white-mask .type-list .item {
+        width: 80%;
+    }
+    .tour-type .white-mask .type-list span {
+        font-size: 18px;
+    }
+    .beautiful-trips .trips-list .trip .trip-description {
+        left: 19%;
+    }
+    .feedback .contact-us .contact-item .subscribe-form input {
+        width: 90%;
+    }
+    .feedback .contact-us .contact-item .subscribe-form .submit {
+        width: 25%;
+        padding: 10px 0;
+        left: 69%;
+    }
 }

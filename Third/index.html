@@ -2,10 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Blog Magazine Flat</title>
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700" rel="stylesheet">
+        <script src="js/slider.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -32,203 +35,186 @@
                 </form>
             </header>
             <section class="main">
-                <ul class="main-menu">
-                    <li class="item home">
-                        <a href="#" title="home">home</a>
-                    </li>
-                    <li class="item shop">
-                        <a href="#" title="store">store</a>
-                    </li>
-                    <li class="item note">
-                        <a href="#" title="blog">blog</a>
-                        <ul class="drop-list">
-                            <li class="drop-list-item">
-                                <a href="#" title="tech" class="item-link">tech</a>
-                                <a href="#" title="software &amp; apps" class="item-link">software &amp; apps</a>
-                                <a href="#" title="gadgets" class="item-link">gadgets</a>
-                                <a href="#" title="mobile" class="item-link">mobile</a>
-                            </li>
-                            <li class="drop-list-item ">
-                                <a href="#" title="entertainment" class="item-link">entertainment</a>
-                                <a href="#" title="film" class="item-link">film</a>
-                                <a href="#" title="gaming" class="item-link">gaming</a>
-                                <a href="#" title="music" class="item-link">music</a>
-                                <a href="#" title="sport" class="item-link">sport</a>
-                            </li>
-                            <li class="drop-list-item">
-                                <a href="#" title="business" class="item-link">business</a>
-                                <a href="#" title="jobs" class="item-link">jobs</a>
-                                <a href="#" title="marketing" class="item-link">marketing</a>
-                                <a href="#" title="media" class="item-link">media</a>
-                            </li>
-                            <li class="drop-list-item">
-                                <a href="#" title="lifestyle" class="item-link">lifestyle</a>
-                                <a href="#" title="home" class="item-link">home</a>
-                                <a href="#" title="health &amp; fitness" class="item-link">health &amp; fitness</a>
-                                <a href="#" title="travel &amp; leisure" class="item-link">travel &amp; leisure</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item users">
-                        <a href="#" title="community">community</a>
-                    </li>
-                    <li class="item trophy">
-                        <a href="#" title="contests">contests</a>
-                    </li>
-                    <li class="item info">
-                        <a href="#" title="about">about</a>
-                    </li>
-                    <li class="item contact">
-                        <a href="#" title="contact">contact</a>
-                    </li>
-                </ul>
-                <div class="aside">
-                    <div class="socials">
-                        <ul class="social-list">
-                            <li class="social-item">
-                                <a href="#" class="social" title="facebook"><img src="img/main/facebook.png" class="social-img" alt="facebook"></a>
-                                <a href="#" class="social-link" title="facebook">facebook</a>
-                            </li>
-                            <li class="social-item">
-                                <a href="#" class="social  active" title="twitter"><img src="img/main/twitter.png" class="social-img" alt="twitter"></a>
-                                <a href="#" class="social-link active" title="twitter">twitter</a>
-                            </li>
-                            <li class="social-item">
-                                <a href="#" class="social" title="google plus"><img src="img/main/google.png" class="social-img" alt="google"></a>
-                                <a href="#" class="social-link" title="google +">google +</a>
-                            </li>
-                            <li class="social-item">
-                                <a href="#" class="social" title="rss-feeds"><img src="img/main/rss-feeds.png" class="social-img" alt="rss-feeds"></a>
-                                <a href="#" class="social-link" title="rss feeds">rss feeds</a>
-                            </li>
-                            <li class="social-item">
-                                <a href="#" class="social" title="pinterest"><img src="img/main/pinterest.png" class="social-img" alt="pinterest"></a>
-                                <a href="#" class="social-link" title="pinterest">pinterest</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="follow-social">
-                        <div class="follow-facebook">
-                            <span class="subscribers">156k</span>
-                            <div class="follow-box">
-                                <span class="follow"></span>
-                                <span class="text">Follow</span>
-                            </div>
-                        </div>
-                        <div class="follow-twitter">
-                            <span class="subscribers">89k</span>
-                            <div class="follow-box">
-                                <span class="following"></span>
-                                <span class="text">Following</span>
-                            </div>
+                <div class="menu-box">
+                    <ul class="main-menu">
+                        <li class="item home">
+                            <a href="#" title="home">home</a>
+                        </li>
+                        <li class="item shop">
+                            <a href="#" title="store">store</a>
+                        </li>
+                        <li class="item note">
+                            <a href="#" title="blog">blog</a>
+                            <ul class="drop-list">
+                                <li class="drop-list-item">
+                                    <a href="#" title="tech" class="item-link">tech</a>
+                                    <a href="#" title="software &amp; apps" class="item-link">software &amp; apps</a>
+                                    <a href="#" title="gadgets" class="item-link">gadgets</a>
+                                    <a href="#" title="mobile" class="item-link">mobile</a>
+                                </li>
+                                <li class="drop-list-item ">
+                                    <a href="#" title="entertainment" class="item-link">entertainment</a>
+                                    <a href="#" title="film" class="item-link">film</a>
+                                    <a href="#" title="gaming" class="item-link">gaming</a>
+                                    <a href="#" title="music" class="item-link">music</a>
+                                    <a href="#" title="sport" class="item-link">sport</a>
+                                </li>
+                                <li class="drop-list-item">
+                                    <a href="#" title="business" class="item-link">business</a>
+                                    <a href="#" title="jobs" class="item-link">jobs</a>
+                                    <a href="#" title="marketing" class="item-link">marketing</a>
+                                    <a href="#" title="media" class="item-link">media</a>
+                                </li>
+                                <li class="drop-list-item">
+                                    <a href="#" title="lifestyle" class="item-link">lifestyle</a>
+                                    <a href="#" title="home" class="item-link">home</a>
+                                    <a href="#" title="health &amp; fitness" class="item-link">health &amp; fitness</a>
+                                    <a href="#" title="travel &amp; leisure" class="item-link">travel &amp; leisure</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item users">
+                            <a href="#" title="community">community</a>
+                        </li>
+                        <li class="item trophy">
+                            <a href="#" title="contests">contests</a>
+                        </li>
+                        <li class="item info">
+                            <a href="#" title="about">about</a>
+                        </li>
+                        <li class="item contact">
+                            <a href="#" title="contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#" class="social facebook" title="facebook"></a>
+                            <a href="#" class="social-link" title="facebook">facebook</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social twitter active" title="twitter"></a>
+                            <a href="#" class="social-link active" title="twitter">twitter</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social google" title="google plus"></a>
+                            <a href="#" class="social-link" title="google +">google +</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social rss" title="rss-feeds"></a>
+                            <a href="#" class="social-link" title="rss feeds">rss feeds</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social pinterest" title="pinterest"></a>
+                            <a href="#" class="social-link" title="pinterest">pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follow-social">
+                    <div class="follow-facebook">
+                        <span class="subscribers">156k</span>
+                        <div class="follow-box">
+                            <span class="follow"></span>
+                            <span class="text">Follow</span>
                         </div>
                     </div>
-                    <div class="sign-in">
-                        <h2>Sign In</h2>
-                        <span>Just select your favorite social network to get started</span>
-                        <nav class="social-menu">
-                            <a href="#" class="social-facebook" title="facebook"></a>
-                            <a href="#" class="social-twitter" title="twitter"></a>
-                            <a href="#" class="social-google" title="google"></a>
-                            <a href="#" class="social-linkedin" title="linkedin"></a>
-                        </nav>
-                    </div>
-                    <div class="newsletter">
-                        <h2>Join the Newsletter</h2>
-                        <span>Sign up for our personalized daily newsletter</span>
-                        <form action="" method="" class="email-form">
-                            <input type="text" name="email" class="email-address" placeholder="Enter email address">
-                            <button class="sign-up">sign up</button>
-                        </form>
+                    <div class="follow-twitter">
+                        <span class="subscribers">89k</span>
+                        <div class="follow-box">
+                            <span class="following"></span>
+                            <span class="text">Following</span>
+                        </div>
                     </div>
                 </div>
+                <div class="sign-in">
+                    <h2>Sign In</h2>
+                    <span>Just select your favorite social network to get started</span>
+                    <nav class="social-menu">
+                        <a href="#" class="social-facebook" title="facebook"></a>
+                        <a href="#" class="social-twitter" title="twitter"></a>
+                        <a href="#" class="social-google" title="google"></a>
+                        <a href="#" class="social-linkedin" title="linkedin"></a>
+                    </nav>
+                </div>
                 <div class="feedback">
-                    <span class="phone">(912) 555-1234<br>
-                                        (912) 555-5678</span>
-                    <address>1600 Pennsylvania<br>
-                        Ave NW, Washington<br>
-                        DC 20500, USA</address>
-                    <span class="email">hello@website.com<br>
-                                        office@website.com</span>
+                    <span class="phone">(912) 555-1234 (912) 555-5678</span>
+                    <address>1600 Pennsylvania Ave NW, Washington DC 20500, USA</address>
+                    <span class="email">hello@website.com office@website.com</span>
+                </div>
+                <div class="newsletter">
+                    <h2>Join the Newsletter</h2>
+                    <span>Sign up for our personalized daily newsletter</span>
+                    <form action="" method="" class="email-form">
+                        <input type="text" name="email" class="email-address" placeholder="Enter email address">
+                        <button class="sign-up">sign up</button>
+                    </form>
                 </div>
             </section>
             <section class="slider">
-                <span class="prev"></span>
-                <span class="next"></span>
-                <input type="radio" name="slide" id="slide_1"  checked>
-                <label for="slide_1"></label>
+                <div class="photo">
+                    <img src="img/slider/1.jpg" id="slide_img01" class="img showed" alt="photo">
+                    <img src="img/slider/2.jpg" id="slide_img02" class="img" alt="photo">
+                    <img src="img/slider/3.jpg" id="slide_img03" class="img" alt="photo">
+                    <img src="img/slider/4.jpg" id="slide_img04" class="img" alt="photo">
+                </div>
+                <div class="buttons">
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
                 <div class="description">
                     <h1>featured story</h1>
                     <p>Now that the holiday gift-giving time is over, we're<br>
                         sure many of our readers unwrapped some new consoles.<br>
                         Despite its long life on the market...</p>
-                    <img src="img/slider/11.jpg" alt="slide_1">
+                    <button class="view-more">view more</button>
                 </div>
-                <button class="view-more">view more</button>
-                <label for="slide_2"></label>
-                <input type="radio" name="slide" id="slide_2">
-                <label for="slide_2"></label>
-                <div class="description">
-                    <h1>featured story</h1>
-                    <p>Now that the holiday gift-giving time is over, we're<br>
-                        sure many of our readers unwrapped some new consoles.<br>
-                        Despite its long life on the market...</p>
-                    <img src="img/slider/12.jpg" alt="slide_2">
-                </div>
-                <button class="view-more">view more</button>
-                <label for="slide_3"></label>
-                <input type="radio" name="slide" id="slide_3">
-                <label for="slide_3"></label>
-                <div class="description">
-                    <h1>featured story</h1>
-                    <p>Now that the holiday gift-giving time is over, we're<br>
-                        sure many of our readers unwrapped some new consoles.<br>
-                        Despite its long life on the market...</p>
-                    <img src="img/slider/13.jpg" alt="slide_3">
-                </div>
-                <button class="view-more">view more</button>
-                <label for="slide_4"></label>
-                <input type="radio" name="slide" id="slide_4">
-                <label for="slide_4"></label>
-                <div class="description">
-                    <h1>featured story</h1>
-                    <p>Now that the holiday gift-giving time is over, we're<br>
-                        sure many of our readers unwrapped some new consoles.<br>
-                        Despite its long life on the market...</p>
-                    <img src="img/slider/14.jpg" alt="slide_4">
-                </div>
-                <button class="view-more">view more</button>
-                <label for="slide_1"></label>
+                <div class="pagination"></div>
             </section>
             <section class="video">
                 <div class="best-story">
-                    <h1>Best story you<br>have ever heard</h1>
+                    <h2>Best story you have ever heard</h2>
                     <span>24 minutes ago</span>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s...
                        <a href="#" title="read more" class="read-more">Read more</a>
                     </p>
                 </div>
-                <div class="video-bar">
-                    <ul class="like-share-video">
-                        <li class="item heart"><a href="#" title="like">like</a></li>
-                        <li class="item clock"><a href="#" title="later">later</a></li>
-                        <li class="item share"><a href="#" title="share">share</a></li>
-                    </ul>
+                <div class="video-player">
+                    <div class="video-bar">
+                        <ul class="like-share">
+                            <li class="item">
+                                <span class="icon heart"></span>
+                                <span class="text" title="like">like</span>
+                            </li>
+                            <li class="item">
+                                <span class="icon clock"></span>
+                                <span class="text" title="later">later</span>
+                            </li>
+                            <li class="item">
+                                <span class="icon share"></span>
+                                <span class="text" title="share">share</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="player">
+                        <div class="layer"></div>
+                        <iframe src="https://www.youtube.com/embed/zMXpicSejP8" class="frame" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <video controls="controls" height="300" width="505" poster="img/video/wot.jpg">
-                    <source src="">
-                </video>
             </section>
             <section class="photo">
                 <div class="photo-share">
-                    <span class="share"><a href="#" title="share">1,325</a></span>
-                    <span class="heart"><a href="#" title="like">682</a></span>
+                    <div class="share">
+                        <span class="share-icon" title="share"></span>
+                        <span class="share-count">1325</span>
+                    </div>
+                    <div class="heart">
+                        <span class="heart-icon" title="like"></span>
+                        <span class="heart-count" title="like">682</span>
+                    </div>
                 </div>
                 <div class="instagram-ads">
-                    <h1>Here's What<br>
-                        Instagram Ads Will<br>
-                        Look Like
-                    </h1>
+                    <h2>Here's What Instagram Ads Will Look Like</h2>
                     <span>3 hours ago</span>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...
                         <a href="#" title="read more" class="read-more">Read more</a>
@@ -236,219 +222,213 @@
                 </div>
                 <img src="img/photo/wot.jpg" alt="image" class="image">
             </section>
-            <div class="left-aside">
-                <div class="comments">
-                    <div class="author">
-                        <span class="name-surname">alex white</span><span class="email">@alexwhite</span>
-                    </div>
-                    <div class="comment">
-                        <p>Singolo is a free PSD template
-                            of a flat, single page website
-                            created by <span class="link">@PsdChat #freebie
-                            #psd http://bit.ly/19XM8Lj</span></p>
-                        <span class="time-ago">2 hours ago</span>
-                    </div>
-                    <div class="comment">
-                        <p>Saturday Career Workshops
-                            are back at ADC! See what high
-                            school students created this
-                            week: <span class="link">http://bit.ly/Xx1EsL</span></p>
-                        <span class="time-ago">6 hours ago</span>
-                    </div>
+            <div class="comments">
+                <div class="author">
+                    <span class="name-surname">alex white</span><span class="email">@alexwhite</span>
                 </div>
-                <div class="whats-hot">
-                    <h2>what's hot</h2>
-                    <div class="navigation">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="hot-list">
-                        <li class="hot-item">
-                            <img src="" alt="image" class="image">
-                            <div class="article">
-                                <a href="#" class="hot-link" title="A New Yorker doesn't necessarily come from">
-                                    A New Yorker doesn't necessarily come from...</a>
-                                <span>3 minutes ago</span>
-                            </div>
-                        </li>
-                        <li class="hot-item">
-                            <img src="" alt="image" class="image">
-                            <div class="article">
-                                <a href="#" class="hot-link" title="A New Yorker never looks up">
-                                    A New Yorker never looks up...</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </li>
-                        <li class="hot-item">
-                            <img src="" alt="image" class="image">
-                            <div class="article">
-                                <a href="#" class="hot-link" title="A New Yorker doesn’t take cabs">
-                                    A New Yorker doesn’t take cabs</a>
-                                <span>23 hours ago</span>
-                            </div>
-                        </li>
-                        <li class="hot-item">
-                            <img src="" alt="image" class="image">
-                            <div class="article">
-                                <a href="#" class="hot-link" title="A New Yorker views celebrities as regular">
-                                    A New Yorker views celebrities as regular...</a>
-                                <span>1 day ago</span>
-                            </div>
-                        </li>
-                        <li class="hot-item">
-                            <img src="" alt="image" class="image">
-                            <div class="article">
-                                <a href="#" class="hot-link" title="A New Yorker never looks up">
-                                    A New Yorker never looks up...</a>
-                                <span>2 days ago</span>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="comment">
+                    <p>Singolo is a free PSD template
+                        of a flat, single page website
+                        created by <span class="link">@PsdChat #freebie
+                        #psd http://bit.ly/19XM8Lj</span></p>
+                    <span class="time-ago">2 hours ago</span>
                 </div>
-                <div class="ask-question">
-                    <h2>Ask a Question</h2>
-                    <form action="" method="" class="question-form">
-                        <input type="text" name="username" class="name" placeholder="Your name">
-                        <input type="email" name="email" class="email" placeholder="Your email">
-                        <textarea name="question" class="question" placeholder="Your question..."></textarea>
-                        <button class="submit">submit</button>
-                    </form>
+                <div class="comment">
+                    <p>Saturday Career Workshops
+                        are back at ADC! See what high
+                        school students created this
+                        week: <span class="link">http://bit.ly/Xx1EsL</span></p>
+                    <span class="time-ago">6 hours ago</span>
                 </div>
             </div>
-            <div class="right-aside">
-                <div class="calendar">
-                    <table class="cal">
-                        <caption>
-                            <a href="#" class="month prev" title="prev">oct</a>
-                            november
-                            <a href="#" class="month next" title="next">dec</a>
-                        </caption>
-                        <tr class="row">
-                            <td class="date not-this-month"></td>
-                            <td class="date not-this-month"></td>
-                            <td class="date not-this-month"></td>
-                            <td class="date not-this-month"></td>
-                            <td class="date">1</td>
-                            <td class="date day-off">2</td>
-                            <td class="date day-off">3</td>
-                        </tr>
-                        <tr class="row">
-                            <td class="date">4</td>
-                            <td class="date">5</td>
-                            <td class="date current-date">6</td>
-                            <td class="date">7</td>
-                            <td class="date">8</td>
-                            <td class="date day-off">9</td>
-                            <td class="date day-off">10</td>
-                        </tr>
-                        <tr class="row">
-                            <td class="date">11</td>
-                            <td class="date">12</td>
-                            <td class="date">13</td>
-                            <td class="date event">14</td>
-                            <td class="date">15</td>
-                            <td class="date day-off">16</td>
-                            <td class="date day-off">17</td>
-                        </tr>
-                        <tr class="row">
-                            <td class="date">18</td>
-                            <td class="date">19</td>
-                            <td class="date">20</td>
-                            <td class="date">21</td>
-                            <td class="date">22</td>
-                            <td class="date day-off">23</td>
-                            <td class="date day-off">24</td>
-                        </tr>
-                        <tr class="row">
-                            <td class="date">25</td>
-                            <td class="date">26</td>
-                            <td class="date">27</td>
-                            <td class="date">28</td>
-                            <td class="date">29</td>
-                            <td class="date day-off">30</td>
-                            <td class="date not-this-month"></td>
-                        </tr>
-                    </table>
+            <div class="calendar">
+                <table class="cal">
+                    <caption>
+                        <a href="#" class="month prev" title="prev">oct</a>
+                        november
+                        <a href="#" class="month next" title="next">dec</a>
+                    </caption>
+                    <tr class="row">
+                        <td class="date not-this-month"></td>
+                        <td class="date not-this-month"></td>
+                        <td class="date not-this-month"></td>
+                        <td class="date not-this-month"></td>
+                        <td class="date">1</td>
+                        <td class="date day-off">2</td>
+                        <td class="date day-off">3</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="date">4</td>
+                        <td class="date">5</td>
+                        <td class="date current-date">6</td>
+                        <td class="date">7</td>
+                        <td class="date">8</td>
+                        <td class="date day-off">9</td>
+                        <td class="date day-off">10</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="date">11</td>
+                        <td class="date">12</td>
+                        <td class="date">13</td>
+                        <td class="date event">14</td>
+                        <td class="date">15</td>
+                        <td class="date day-off">16</td>
+                        <td class="date day-off">17</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="date">18</td>
+                        <td class="date">19</td>
+                        <td class="date">20</td>
+                        <td class="date">21</td>
+                        <td class="date">22</td>
+                        <td class="date day-off">23</td>
+                        <td class="date day-off">24</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="date">25</td>
+                        <td class="date">26</td>
+                        <td class="date">27</td>
+                        <td class="date">28</td>
+                        <td class="date">29</td>
+                        <td class="date day-off">30</td>
+                        <td class="date not-this-month"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="more-stories">
+                <span class="title">view<br>more<br>stories</span>
+                <span class="arrow" title="more stories"></span>
+            </div>
+            <div class="new">
+                <img src="img/new-1.png" alt="image" class="img">
+                <div class="triangle-wrapper">
+                    <span>new</span>
+                    <div class="triangle"></div>
                 </div>
-                <div class="more-stories">
-                    <span>view<br>more<br>stories</span>
-                    <span class="arrow"></span>
+            </div>
+            <div class="whats-hot">
+                <h2>what's hot</h2>
+                <div class="navigation">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="new">
-                    <img src="img/new-1.png" alt="image" class="img">
-                    <div class="triangle-wrapper">
-                        <span>new</span>
-                        <div class="triangle"></div>
-                    </div>
-                </div>
-                <article>
-                    <h2>What is Lorem Ipsum?</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting...
-                        <a href="#" title="read more" class="read-more">Read more</a>
-                    </p>
-                    <ul class="share-view-comments">
-                        <li class="item shares">
-                            <a href="#" title="shares">569 Shares</a>
-                        </li>
-                        <li class="item views">
-                            <a href="#" title="views">3,152 Views</a>
-                        </li>
-                        <li class="item comments">
-                            <a href="#" title="comments">21 Comments</a>
-                        </li>
-                    </ul>
-                </article>
-                <div class="quote">
-                    <blockquote>
-                        &quot; If you don’t like something change it.<br>
-                        <span>If you can’t change it, change the way you</span><br>
-                        <span>think about it</span> &quot;
-                    </blockquote>
-                </div>
-                <div class="categories">
-                    <ul class="categories-list">
-                        <li class="category-item">
-                            <a href="#" title="about"  class="category-link">about</a>
-                        </li>
-                        <li class="category-item current">
-                            <a href="#" title="team"  class="category-link">team</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="#" title="privacy"  class="category-link">privacy</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="#" title="advertise"  class="category-link">advertise</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="#" title="contact" class="category-link">contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-review">
-                    <ul class="reviews-list">
-                        <li class="review">
-                            <img src="img/right-aside/anne-hathaway.jpg" alt="photo" class="avatar">
-                            <h2>anne hathaway</h2>
-                            <span class="position">CEO / Founder</span>
-                            <p>
-                                &quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...&quot;
-                            </p>
-                            <span class="email">@annehathaway</span>
+                <ul class="hot-list">
+                    <li class="hot-item">
+                        <img src="img/new-yorker.png" alt="image" class="image">
+                        <div class="article">
+                            <a href="#" class="hot-link" title="A New Yorker doesn't necessarily come from">
+                                A New Yorker doesn't necessarily come from...</a>
+                            <span>3 minutes ago</span>
+                        </div>
+                    </li>
+                    <li class="hot-item">
+                        <img src="img/new-yorker.png" alt="image" class="image">
+                        <div class="article">
+                            <a href="#" class="hot-link" title="A New Yorker never looks up">
+                                A New Yorker never looks up...</a>
+                            <span>7 hours ago</span>
+                        </div>
+                    </li>
+                    <li class="hot-item">
+                        <img src="img/new-yorker.png" alt="image" class="image">
+                        <div class="article">
+                            <a href="#" class="hot-link" title="A New Yorker doesn’t take cabs">
+                                A New Yorker doesn’t take cabs</a>
+                            <span>23 hours ago</span>
+                        </div>
+                    </li>
+                    <li class="hot-item">
+                        <img src="img/new-yorker.png" alt="image" class="image">
+                        <div class="article">
+                            <a href="#" class="hot-link" title="A New Yorker views celebrities as regular">
+                                A New Yorker views celebrities as regular...</a>
+                            <span>1 day ago</span>
+                        </div>
+                    </li>
+                    <li class="hot-item">
+                        <img src="img/new-yorker.png" alt="image" class="image">
+                        <div class="article">
+                            <a href="#" class="hot-link" title="A New Yorker never looks up">
+                                A New Yorker never looks up...</a>
+                            <span>2 days ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <article>
+                <h2>What is Lorem Ipsum?</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting...
+                    <a href="#" title="read more" class="read-more">Read more</a>
+                </p>
+                <ul class="share-view-comments">
+                    <li class="item shares">
+                        <a href="#" title="shares">569 Shares</a>
+                    </li>
+                    <li class="item views">
+                        <a href="#" title="views">3,152 Views</a>
+                    </li>
+                    <li class="item comments-count">
+                        <a href="#" title="comments">21 Comments</a>
+                    </li>
+                </ul>
+            </article>
+            <div class="quote">
+                <blockquote>
+                    &quot; If you don’t like something change it.
+                    If you can’t change it, change the way you
+                    think about it &quot;
+                </blockquote>
+            </div>
+            <div class="ask-question">
+                <h2>Ask a Question</h2>
+                <form action="" method="" class="question-form">
+                    <input type="text" name="username" class="name" placeholder="Your name">
+                    <input type="email" name="email" class="email" placeholder="Your email">
+                    <textarea name="question" class="question" placeholder="Your question..."></textarea>
+                    <button class="submit">submit</button>
+                </form>
+            </div>
+            <div class="team-review">
+                <ul class="categories-list">
+                    <li class="category-item">
+                        <a href="#" title="about"  class="category-link">about</a>
+                    </li>
+                    <li class="category-item current">
+                        <a href="#" title="team"  class="category-link">team</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" title="privacy"  class="category-link">privacy</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" title="advertise"  class="category-link">advertise</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" title="contact" class="category-link">contact</a>
+                    </li>
+                </ul>
+                <ul class="reviews-list">
+                    <li class="review">
+                        <img src="img/right-aside/anne-hathaway.jpg" alt="photo" class="avatar">
+                        <h2>anne hathaway</h2>
+                        <span class="position">CEO / Founder</span>
+                        <p>
+                            &quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...&quot;
+                        </p>
+                        <span class="email">@annehathaway</span>
 
-                        </li>
-                        <li class="review">
-                            <img src="img/right-aside/kate-upton.jpg" alt="photo" class="avatar">
-                            <h2>kate upton</h2>
-                            <span class="position">Co-Founder</span>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...
-                            </p>
-                            <span class="email">@kateupton</span>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="review">
+                        <img src="img/right-aside/kate-upton.jpg" alt="photo" class="avatar">
+                        <h2>kate upton</h2>
+                        <span class="position">Co-Founder</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...
+                        </p>
+                        <span class="email">@kateupton</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>

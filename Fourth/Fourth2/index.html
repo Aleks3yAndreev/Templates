@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Brand</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -9,30 +10,30 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     </head>
     <body>
-        <header class="page-header">
-            <div class="topbar">
-                <div class="wrapper">
-                    <div class="currency">
-                        <span>Currency:</span>
-                        <select name="currency" id="currency">
-                            <option value="gbp">GBP</option>
-                            <option value="dollar">USD</option>
-                            <option value="rur">RUR</option>
-                            <option value="jpy">JPY</option>
-                            <option value="cny">CNY</option>
-                        </select>
-                    </div>
-                    <div class="basket">
-                        <select name="purchases" class="purchases">
-                            <option value="empty">empty</option>
-                        </select>
-                    </div>
-                    <div class="reg-sign-in">
-                        <a href="#" title="register" class="register">register</a>
-                        <a href="#" title="sign in" class="sign-in">sign in</a>
-                    </div>
+        <header class="page-header clr">
+            <div class="wrapper">
+                <div class="currency">
+                    <label for="currency">Currency:</label>
+                    <select name="currency" id="currency">
+                        <option value="gbp">GBP</option>
+                        <option value="dollar">USD</option>
+                        <option value="rur">RUR</option>
+                        <option value="jpy">JPY</option>
+                        <option value="cny">CNY</option>
+                    </select>
+                </div>
+                <div class="basket">
+                    <select name="purchases" class="purchases" title="basket">
+                        <option value="empty">empty</option>
+                    </select>
+                </div>
+                <div class="reg-sign-in">
+                    <a href="#" title="register" class="register">register</a>
+                    <a href="#" title="sign in" class="sign-in">sign in</a>
                 </div>
             </div>
+        </header>
+        <section class="clothing-categories clr">
             <div class="wrapper">
                 <div class="logo">
                     <a href="#" title="avenue fashion" class="avenue">avenue</a>
@@ -59,7 +60,7 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </section>
         <div class="intro">
             <div class="darken">
                 <div class="intro-wrapper">
@@ -71,27 +72,33 @@
                 </div>
             </div>
         </div>
-        <section class="content">
+        <section class="content clr">
             <div class="content-wrapper">
-                <div class="left-column">
+                <div class="hand-clothing">
                     <img src="img/photo1.png" alt="photo" class="img">
-                    <img src="img/photo3.png" alt="photo" class="img">
-                    <h2>our values, vision and strategy</h2>
-                    <h3>The above image would be a great place for an advertising video</h3>
-                    <p class="text">Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.
-                        Pellentesque sapien mi, <a href="#" title="link" class="link">tincidunt nec magna vitae</a>, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.
-                    </p>
-                </div>
-                <div class="right-column">
-                    <h2>hand designed clothing</h2>
-                    <h3>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</h3>
-                    <p class="text">Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+                    <div class="description">
+                        <h2>hand designed clothing</h2>
+                        <h3>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</h3>
+                        <p class="text">Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+                    </div>
+                    </div>
+                <div class="ethical-trading">
                     <img src="img/photo2.png" alt="photo" class="img">
-                    <h2>Ethical trading</h2>
-                    <h3>we oversee the working conditions of the people in the supply chain</h3>
-                    <p class="text">Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit.
-                        <a href="#" title="link" class="link">A link <span class="arrow"></span></a>
-                    </p>
+                    <div class="description">
+                        <h2>Ethical trading</h2>
+                        <h3>we oversee the working conditions of the people in the supply chain</h3>
+                        <p class="text">Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit.
+                            <a href="#" title="link" class="link">A link</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="our-strategy">
+                    <img src="img/photo3.png" alt="photo" class="img">
+                    <div class="description">
+                        <h2>our values, vision and strategy</h2>
+                        <h3>The above image would be a great place for an advertising video</h3>
+                        <p class="text">Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare. Pellentesque sapien mi, <a href="#" title="link" class="link">tincidunt nec magna vitae</a>, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.</p>
+                    </div>
                 </div>
                 <div class="awards">
                     <img src="img/award1.png" alt="award" class="award-img">
@@ -100,8 +107,8 @@
                 </div>
             </div>
         </section>
-        <footer class="page-footer">
-            <div class="footer-wrapper">
+        <section class="about-us clr">
+            <div class="about-wrapper">
                 <ul class="footer-menu">
                     <li class="item">
                         <a href="#" title="Information" class="link">Information</a>
@@ -140,7 +147,7 @@
                     <li class="item">
                         <a href="#" title="contact details" class="link">contact details</a>
                         <address>Head Office: Avenue Fashion,<br>
-                            180-182 Regent Street, London.<br>
+                                 180-182 Regent Street, London.<br>
                             <span class="phone">Telephone: 0123-456-789</span><br>
                             <span class="email">Email: support@yourwebsite.com</span>
                         </address>
@@ -148,8 +155,8 @@
                 </ul>
                 <div class="banners">
                     <div class="award">
-                        award winner<br>
-                        <span>fashion awards 2016</span>
+                        <span>award winner</span>
+                        <span class="weight">fashion awards 2016</span>
                     </div>
                     <div class="social">
                         <a href="#" title="facebook" class="social-link facebook"></a>
@@ -159,12 +166,12 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="footer-wrapper">
-                    <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
-                    <span class="design-by">Design by RobbyDesigns.com</span>
-                    <span class="dev-by">Dev by Loremipsum.com</span>
-                </div>
+        </section>
+        <footer class="page-footer">
+            <div class="about-wrapper">
+                <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
+                <span class="design-by">Design by RobbyDesigns.com</span>
+                <span>Dev by Loremipsum.com</span>
             </div>
         </footer>
     </body>

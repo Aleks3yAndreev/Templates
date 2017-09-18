@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lookbook</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -9,30 +10,30 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     </head>
     <body>
-        <header class="page-header">
-            <div class="topbar">
-                <div class="wrapper">
-                    <div class="currency">
-                        <span>Currency:</span>
-                        <select name="currency" id="currency">
-                            <option value="gbp">GBP</option>
-                            <option value="dollar">USD</option>
-                            <option value="rur">RUR</option>
-                            <option value="jpy">JPY</option>
-                            <option value="cny">CNY</option>
-                        </select>
-                    </div>
-                    <div class="basket">
-                        <select name="purchases" class="purchases">
-                            <option value="empty">empty</option>
-                        </select>
-                    </div>
-                    <div class="reg-sign-in">
-                        <a href="#" title="register" class="register">register</a>
-                        <a href="#" title="sign in" class="sign-in">sign in</a>
-                    </div>
+        <header class="page-header clr">
+            <div class="wrapper">
+                <div class="currency">
+                    <label for="currency">Currency:</label>
+                    <select name="currency" id="currency">
+                        <option value="gbp">GBP</option>
+                        <option value="dollar">USD</option>
+                        <option value="rur">RUR</option>
+                        <option value="jpy">JPY</option>
+                        <option value="cny">CNY</option>
+                    </select>
+                </div>
+                <div class="basket">
+                    <select name="purchases" class="purchases" title="basket">
+                        <option value="empty">empty</option>
+                    </select>
+                </div>
+                <div class="reg-sign-in">
+                    <a href="#" title="register" class="register">register</a>
+                    <a href="#" title="sign in" class="sign-in">sign in</a>
                 </div>
             </div>
+        </header>
+        <section class="clothing-categories clr">
             <div class="wrapper">
                 <div class="logo">
                     <a href="#" title="avenue fashion" class="avenue">avenue</a>
@@ -72,14 +73,13 @@
                                 </li>
                             </ul>
                             <div class="banner">
-                                Autumn sale!<br>
-                                <span>up to 50% off</span>
+                                Autumn sale!<span>up to 50% off</span>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </header>
+        </section>
         <div class="intro">
             <div class="darken">
                 <div class="intro-wrapper">
@@ -93,13 +93,16 @@
         </div>
         <section class="offer">
             <div class="offer-wrapper">
-                <nav class="offer-menu">
-                    <a href="#" title="latest" class="offer-link current">latest</a>
-                    <a href="#" title="most liked" class="offer-link">most liked</a>
-                    <a href="#" title="best sellers" class="offer-link">best sellers</a>
-                    <a href="#" title="price low to high" class="offer-link">price low to high</a>
-                    <a href="#" title="price high to low" class="offer-link">price high to low</a>
-                </nav>
+                <div class="toggle">
+                    <div class="menuToggle">Menu</div>
+                    <nav class="offer-menu">
+                        <a href="#" title="latest" class="offer-link current">latest</a>
+                        <a href="#" title="most liked" class="offer-link">most liked</a>
+                        <a href="#" title="best sellers" class="offer-link">best sellers</a>
+                        <a href="#" title="price low to high" class="offer-link">price low to high</a>
+                        <a href="#" title="price high to low" class="offer-link">price high to low</a>
+                    </nav>
+                </div>
                 <div class="latest-offer">
                     <div class="model">
                         <img class="img" src="img/offer/model1.png" alt="photo">
@@ -114,7 +117,7 @@
                         <span class="reference"><span class="small">ref</span>W1</span>
                     </div>
                     <div class="janes-lookbook">
-                        <img src="img/offer/jane-lookbook.png" alt="photo" width="870" height="500">
+                        <img src="img/offer/jane-icon.png" alt="photo">
                         <div class="description">
                             <h2><span class="bold">Jane’s</span> lookbook</h2>
                             <h3>get the look for under £200!</h3>
@@ -156,7 +159,7 @@
                             <p>Terms: No purchase necessary. Vouchers are non-transferable and no
                                 cash alternative is ofered. Competition is for members only.
                             </p>
-                            <button class="view-now">shop now</button>
+                            <button class="shop-now view-now">shop now</button>
                         </div>
                         <span class="new-look"><span class="big">win</span><span> a new look</span></span>
                     </div>
@@ -173,8 +176,7 @@
                     <li class="item">
                         <img src="img/replace-men's.png" alt="photo" class="img">
                         <div class="description">
-                            <h2>men’s<br>
-                                <span>lookbook</span>
+                            <h2>men’s<span>lookbook</span>
                             </h2>
                             <p>Lorem ipsum dolor sit amet eras facilisis
                                 consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
@@ -186,8 +188,7 @@
                     <li class="item">
                         <img src="img/replace-women's.png" alt="photo" class="img">
                         <div class="description">
-                            <h2>women’s<br>
-                                <span>lookbook</span>
+                            <h2>women’s<span>lookbook</span>
                             </h2>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
                                 Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.
@@ -198,8 +199,7 @@
                     <li class="item">
                         <img src="img/replace-icon.png" alt="photo" class="img">
                         <div class="description">
-                            <h2>your<br>
-                                <span>lookbook</span>
+                            <h2>your<span>lookbook</span>
                             </h2>
                             <p>See an item you like and click the  button to add it to your lookbook where you can create your own perfect look.
                                 It’s like your own boutique!
@@ -210,8 +210,8 @@
                 </ul>
             </div>
         </section>
-        <footer class="page-footer">
-            <div class="footer-wrapper">
+        <section class="about-us clr">
+            <div class="about-wrapper">
                 <ul class="footer-menu">
                     <li class="item">
                         <a href="#" title="Information" class="link">Information</a>
@@ -258,8 +258,8 @@
                 </ul>
                 <div class="banners">
                     <div class="award">
-                        award winner<br>
-                        <span>fashion awards 2016</span>
+                        <span>award winner</span>
+                        <span class="weight">fashion awards 2016</span>
                     </div>
                     <div class="social">
                         <a href="#" title="facebook" class="social-link facebook"></a>
@@ -269,13 +269,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="footer-wrapper">
-                    <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
-                    <span class="design-by">Design by RobbyDesigns.com</span>
-                    <span class="dev-by">Dev by Loremipsum.com</span>
-                </div>
+        </section>
+        <footer class="page-footer">
+            <div class="about-wrapper">
+                <span class="avenue-fashion">&copy; 2016 Avenue Fashion™</span>
+                <span class="design-by">Design by RobbyDesigns.com</span>
+                <span>Dev by Loremipsum.com</span>
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
