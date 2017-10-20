@@ -1,7 +1,7 @@
-window.onload = function() {
-    var btnPrev = document.querySelector('.content .slider .prev'),
-        btnNext = document.querySelector('.content .slider .next'),
-        images = document.querySelectorAll('.content .slider .photo .img'),
+function slider() {
+    var btnPrev = document.querySelector('.content .content-wrapper .slider .buttons .prev'),
+        btnNext = document.querySelector('.content .content-wrapper .slider .buttons .next'),
+        images = document.querySelectorAll('.content .content-wrapper .slider .photo .img'),
         i = 0,
         len = images.length;
     btnNext.onclick = function() {
@@ -36,4 +36,4 @@ window.onload = function() {
         }, 5000);
     }
     changeImage();
-};
+}
