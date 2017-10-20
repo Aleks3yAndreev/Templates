@@ -1,6 +1,6 @@
 window.onload = function() {
-    var menuToggle = document.querySelector('.content .data .menuToggle');
-    var menu = document.querySelector('.content .data .content-menu');
+    var menuToggle = document.querySelector('.content .content-wrapper .data .menuToggle');
+    var menu = document.querySelector('.content .content-wrapper .data .content-menu');
     menuToggle.onclick = function() {
         if(menu.style.display != '') {
             menu.style.display = '';
@@ -8,5 +8,6 @@ window.onload = function() {
             menu.style.display = 'block';
         }
     };
+    slider();
 };
 
